@@ -591,6 +591,12 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 .p-5p {
   padding: 5%;
 }
+.pl-5p {
+  padding-left: 5%;
+}
+.pr-5p {
+  padding-right: 5%;
+}
 .text-left {
   text-align: left;
 }
