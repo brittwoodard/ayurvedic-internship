@@ -21,10 +21,10 @@ features:
    feature: Mastering Ayurvedic Clinical Skills
    description_html: This internship focuses on refining your clinical assessment skills, offering in-depth exploration of Ayurvedic diagnostic techniques.
 teacher: 
-  heading: 
-  description_html: 
+  heading: Your Teacher
+  description_html: Led by an esteemed Ayurvedic doctor with extensive years of practice and teaching, this internship offers unparalleled expertise in Ayurvedic medicine. The lead teacher embodies a wealth of knowledge and a passion for guiding students on their Ayurvedic journey.
   image: 
-    image_url: 
+    image_url: /images/ayurvedic-internship-8.jpg
     image_focus: 
 retreat-overview:
   heading: 
@@ -118,16 +118,11 @@ seo:
 <!-- Your Teacher -->
 <section class="grid grid-cols-2 gap-8 p-10p">
   <div>
-    <h2>Your Teacher</h2>
-    <p>Discover the essence of Ayurveda with Dr. Resmi V. Rajagopal, an Ayurveda Physician from Kerala, India. With
-      roots deeply embedded in Ayurvedic heritage, my journey began in 2007, earning degrees from esteemed institutions
-      like Pankajakasthuri Ayurveda Medical College and ITRA Jamnagar. As a teacher and practitioner, my expertise
-      extends beyond textbooks, incorporating practical wisdom and spiritual insights into health and wellness. Having
-      shaped the future of Ayurveda as an assistant professor at SDM College of Ayurveda, I invite you to delve into the
-      heart of Ayurveda.</p>
+    <h2>{{page.teacher.heading}}</h2>
+    <p>{{page.teacher.description_html}}</p>
     <a class="button">Learn more</a>
   </div>
-  <div class="bg-image-style" style="background-image: url('#');"></div>
+  <div class="bg-image-style" style="background-image: url('{{page.teacher.image.image_url}}'); background-position: {{page.teacher.image.image_focus}};"></div>
 </section>
 
 <!-- Retreat Overview -->
