@@ -1,5 +1,84 @@
 ---
 layout: default
+header: 
+  title: Ayurvedic Internship Retreat in Ubud, Bali
+  subtitle: Hands-On Training for Ayurvedic Health Counselor and Practitioner Students
+  button: 
+    text: Join the waitlist
+    url: #
+brief-overview: 
+  featured-text: The program provides a hands-on and immersive Ayurvedic experience, focusing on client-to-client interaction and thorough diagnostics.
+  heading: Internship Retreat
+  description_html: The program provides a hands-on and immersive Ayurvedic experience, focusing on client-to-client interaction and thorough diagnostics. Participants delve into the intricacies of Ayurveda, gaining insights into system-wise examinations and herbal applications. Tailored for aspiring Ayurvedic Health Counselors and Practitioners, this preceptorship blends theoretical knowledge and practical skills for a transformative journey in Ayurvedic healthcare.
+features:
+ - image_url: /images/ayurvedic-internship-5.jpg
+   feature: In-Person Ayurvedic Training
+   description_html: Embrace the unique opportunity to fulfill essential in-person training hours in our comprehensive internship retreat.
+ - image_url: /images/ayurvedic-internship-8.jpg
+   feature: Client Encounter Experience in Ayurveda
+   description_html: Achieve proficiency through extensive client interactions, adhering to the standards set by the Ayurvedic Accreditation Commission.
+ - image_url: /images/ayurvedic-internship-7.jpg
+   feature: Mastering Ayurvedic Clinical Skills
+   description_html: This internship focuses on refining your clinical assessment skills, offering in-depth exploration of Ayurvedic diagnostic techniques.
+teacher: 
+  heading: 
+  description_html: 
+  image: 
+    image_url: 
+    image_focus: 
+retreat-overview:
+  heading: 
+  description-left_html: 
+  description-right_html: 
+features-banner: 
+ - background-image: 
+   feature: 
+ - background-image: 
+   feature: 
+ - background-image: 
+   feature: 
+location: 
+  heading: 
+  description_html: 
+room-and-board: 
+  heading: 
+  description_html: 
+tuition: 
+  includes: 
+    heading: 
+    description_html: 
+  image_url: 
+  pricing: 
+    pay-in-full: 
+      heading: 
+      price: 
+    payment-plan: 
+      heading: 
+      price: 
+faq: 
+  heading: 
+   - question: 
+     answer_html: 
+   - question: 
+     answer_html: 
+   - question: 
+     answer_html: 
+   - question: 
+     answer_html: 
+   - question: 
+     answer_html: 
+   - question: 
+     answer_html: 
+   - question: 
+     answer_html: 
+   - question: 
+     answer_html: 
+cta: 
+  heading: 
+  description_html: 
+  button: 
+    text: 
+    url: 
 seo:
   title: This should appear in the browser tab
   description:
@@ -9,49 +88,31 @@ seo:
 ---
 <!-- Hero Banner -->
 <section>
-  <h1>Ayurvedic Internship Retreat in Ubud, Bali</h1>
-  <h2>Hands-On Training for Ayurvedic Health Counselor and Practitioner Students</h2>
-  <a>Join the waitlist</a>
+  <h1>{{page.header.title}}</h1>
+  <h2>{{page.header.subtitle}}</h2>
+  <a href="{{page.header.button.url}}">{{page.header.button.text}}</a>
 </section>
 
 <!-- Brief overview -->
 <section class="grid grid-cols-2">
   <div>
-    <p class="font-feature"><em>The program provides a hands-on and immersive Ayurvedic experience, focusing on
-        client-to-client interaction and thorough diagnostics.</em></p>
+    <p class="font-feature"><em>{{page.brief-overview.featured-text}}</em></p>
   </div>
   <div>
-    <h2>Internship Retreat</h2>
-    <p>The program provides a hands-on and immersive Ayurvedic experience, focusing on client-to-client interaction and
-      thorough diagnostics. Participants delve into the intricacies of Ayurveda, gaining insights into system-wise
-      examinations and herbal applications. Holistic approaches, including Dinacharya, Yoga, and expert talks, enrich
-      the learning experience. The structured schedule covers advanced Ayurvedic therapies, Ayurvedic cooking, and
-      enlightening visits to botanical gardens. Tailored for aspiring Ayurvedic Health Counselors and Practitioners,
-      this preceptorship blends theoretical knowledge and practical skills for a transformative journey in Ayurvedic
-      healthcare.</p>
+    <h2>{{page.brief-overview.heading}}</h2>
+    <p>{{page.brief-overview.description_html}}</p>
   </div>
 </section>
 
 <!-- Features -->
 <section class="p-10p grid grid-cols-3 gap-8">
+  {% for item in page.features %}
   <div>
-    <div class="bg-imgage-style portrait border border-medium"></div>
-    <h3>Meet in-person training hours</h3>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore.</p>
+    <div class="bg-imgage-style min-h-[60vh] border border-medium" style="background-image: url('{{item.image_url}}');"></div>
+    <h3>{{item.feature}}</h3>
+    <p>{{item.description_html}}</p>
   </div>
-  <div>
-    <div class="bg-imgage-style portrait border border-medium"></div>
-    <h3>Complete Client Encounter Requirements</h3>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore.</p>
-  </div>
-  <div>
-    <div class="bg-imgage-style portrait border border-medium"></div>
-    <h3>Refine Your Ayurvedic Clinical Skills</h3>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore.</p>
-  </div>
+  {% endfor %}
 </section>
 
 <!-- Your Teacher -->

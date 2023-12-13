@@ -449,6 +449,9 @@ p, h1, h2, h3, h4, h5, h6, div, section {
 .grid {
   display: grid;
 }
+.min-h-\[60vh\] {
+  min-height: 60vh;
+}
 .w-full {
   width: 100%;
 }
