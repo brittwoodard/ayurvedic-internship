@@ -562,9 +562,6 @@ li {
 .grid {
   display: grid;
 }
-.min-h-\[50vh\] {
-  min-height: 50vh;
-}
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
