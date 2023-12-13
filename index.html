@@ -209,10 +209,12 @@ seo:
 </section>
 
 <!-- CTA -->
-<section class="grid grid-cols-4 gap-8 bg-dark border-b border-light text-light">
+<section class="grid grid-cols-4 gap-16 bg-dark-style py-5p px-10p border-b border-light text-light">
   <div class="col-span-3">
-    <h2>{{page.cta.heading}}</h2>
+    <h2 class="text-serif-md">{{page.cta.heading}}</h2>
     <p>{{page.cta.description_html}}</p>
   </div>
-  <a class="button" href="{{page.cta.button.url}}">{{page.cta.button.text}}</a>
+  <div>
+    <a class="button" href="{{page.cta.button.url}}">{{page.cta.button.text}}</a>
+  </div>
 </section>

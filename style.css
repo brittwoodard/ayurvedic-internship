@@ -52,6 +52,10 @@
     @apply font-serif text-[3rem] leading-[1em] mb-[1rem]
   }
 
+  .text-serif-md {
+    @apply font-serif text-[2.2rem] leading-[1em] mb-[1rem] capitalize
+  }
+
   .text-serif-sm {
     @apply font-serif text-[1.2rem] leading-[1.4rem] mb-[0.5rem]
   }
