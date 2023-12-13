@@ -7,17 +7,16 @@
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 @layer base {
-  /* temporary styles */
-  p, h1, h2, h3, h4, h5, h6, div, section {
-    border: 1px solid grey;
+  
+  body {
+    @apply bg-light font-sans
   }
 
-  p {
-    font-family: 'hind', 'sans-serif';
+  h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 1rem;
   }
 
-  p:last-child {
+  h1, h2, h3, h4, h5, h6, p:last-child {
     margin-bottom: 0;
   }
 
@@ -27,10 +26,31 @@
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @layer components {
-    .bg-imgage-style {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: rgb(94,103,79, 0.3);
-    }
+  /* Typography Classes */
+  .subtitle {
+    font-size: 1.55rem;
+    margin-bottom: 0.5em;
+    font-weight: 300;
+  }
+
+  .text-serif-lg {
+    @apply font-serif text-[3rem] leading-[1em] mb-[0.5em]
+  }
+
+  /* Button Classes */
+  .button {
+    @apply text-center py-2 px-4 bg-light/20 border border-light font-serif capitalize tracking-wider inline-block
+  }
+
+  /* Image Classes */
+  .bg-image-style {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Position Classes */
+  .hero-banner {
+    @apply flex justify-center align-middle items-center
+  }
 }
