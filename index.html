@@ -144,9 +144,9 @@ seo:
 </section>
 
 <!-- Features Banner -->
-<section class="grid grid-cols-3 gap-16">
+<section class="grid grid-cols-3 gap-16 p-[2rem]">
   {% for item in page.features-banner %}
-  <div class="bg-image-style" style="background-image: url('{{item.background_image}}');">
+  <div class="bg-icons text-center font-serif text-black font-bold text-[1.3rem]" style="background-image: url('{{item.background_image}}');">
     <span>{{item.feature}}s</span>
   </div>
   {% endfor %}

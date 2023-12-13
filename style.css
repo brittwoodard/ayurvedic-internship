@@ -53,6 +53,13 @@
     background-repeat: no-repeat;
   }
 
+  .bg-icons {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20% 0;
+  }
+
   /* Position Classes */
   .hero-banner {
     @apply flex justify-center align-middle items-center min-h-[90vh] text-center

@@ -471,6 +471,12 @@ h1, h2, h3, h4, h5, h6, p:last-child {
     background-position: center;
     background-repeat: no-repeat;
   }
+.bg-icons {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20% 0;
+  }
 /* Position Classes */
 .hero-banner {
   display: flex;
@@ -521,11 +527,11 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
-.w-full {
-  width: 100%;
-}
 .w-auto {
   width: auto;
+}
+.w-full {
+  width: 100%;
 }
 .list-none {
   list-style-type: none;
@@ -588,8 +594,8 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 .p-10p {
   padding: 10%;
 }
-.p-5p {
-  padding: 5%;
+.p-\[2rem\] {
+  padding: 2rem;
 }
 .pl-5p {
   padding-left: 5%;
@@ -609,9 +615,18 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 .font-feature {
   font-family: freight-sans-pro, sans-serif;
 }
+.font-serif {
+  font-family: cormorant-garamond, serif;
+}
+.text-\[1\.3rem\] {
+  font-size: 1.3rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.font-bold {
+  font-weight: 700;
 }
 .italic {
   font-style: italic;
