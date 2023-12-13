@@ -73,16 +73,15 @@ faq:
    answer_html: This is an answer
  - question: This is a question
    answer_html: This is an answer
-   
 cta: 
-  heading: 
-  description_html: 
+  heading: Advance your carrer in Ayurvedic wellness
+  description_html: Take a definitive step towards completing your Ayurvedic education and starting your journey as a professional. Join our waitlist today and be the first to secure your place in this life-changing Ayurvedic program.
   button: 
-    text: 
+    text: Join the waitlist
     url: 
 seo:
-  title: This should appear in the browser tab
-  description:
+  title: Ayurvedic Internship in Ubud, Bali
+  description: Join our Ayurvedic internship in Ubud, Bali, led by Dr. Resmi, an experienced Ayurveda Physician and educator. The program includes 180 in-person training hours, at least 54 client encounters, yoga sessions, guided detox, and a comprehensive curriculum. Participants benefit from in-depth client interaction, hands-on diagnostic techniques, and insights into Ayurvedic principles. The setting in culturally-rich Ubud enhances learning, offering a blend of traditional Ayurvedic practice, yoga, and plant-based cuisine. Tuition covers meals, accommodation, and personalized educational experiences.
   keywords:
   social_image:
   hide-from-google: true
@@ -202,8 +201,8 @@ seo:
 <!-- CTA -->
 <section class="grid grid-cols-4 gap-8 bg-dark border-b border-light text-light">
   <div class="col-span-3">
-    <h2>Empowering long text heading goes here</h2>
-    <p>Lorem Ipsum</p>
+    <h2>{{page.cta.heading}}</h2>
+    <p>{{page.cta.description_html}}</p>
   </div>
-  <a class="button">Join the waitlist</a>
+  <a class="button" href="{{page.cta.button.url}}">{{page.cta.button.text}}</a>
 </section>
