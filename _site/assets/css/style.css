@@ -435,7 +435,7 @@ p:last-child {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-color: rgb((94,103,79, 0.3));
+      background-color: rgb(94,103,79, 0.3);
     }
 .col-span-3 {
   grid-column: span 3 / span 3;

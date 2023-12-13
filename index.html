@@ -47,34 +47,33 @@ room-and-board:
   featured_image: images/ayurvedic-internship-1.jpg
 tuition: 
   includes: 
-    heading: 
-    description_html: 
-  featured_image: 
+    heading: Your Tuition Covers
+    description_html: <ul><li>180 In-Person Training Hours</li><li>Minimum of 60 Client Encounters, Adhering to AAC's Guidelines</li><li>Daily Yoga Sessions</li><li>Guided At-Home Detox Program</li><li>Certificate of Completion</li><li>Official Transcripts</li><li>28 Nights of Accommodation</li><li>All Meals (Ayurvedic Cuisine)</li></ul>
+  featured_image: /images/ayurvedic-internship-3.png
   pricing: 
+    heading: Tuition Details
     pay-in-full: 
-      heading: 
-      price: 
+      heading: Pay in Full (save 15%)
+      price: $2,805 USD
     payment-plan: 
-      heading: 
-      price: 
+      heading: 3-Month Payment Plan
+      price: $1,100 X 3 Months
 faq: 
-  heading: 
-   - question: 
-     answer_html: 
-   - question: 
-     answer_html: 
-   - question: 
-     answer_html: 
-   - question: 
-     answer_html: 
-   - question: 
-     answer_html: 
-   - question: 
-     answer_html: 
-   - question: 
-     answer_html: 
-   - question: 
-     answer_html: 
+ - question: This is a question
+   answer_html: This is an answer
+ - question: This is a question
+   answer_html: This is an answer
+ - question: This is a question
+   answer_html: This is an answer
+ - question: This is a question
+   answer_html: This is an answer
+ - question: This is a question
+   answer_html: This is an answer
+ - question: This is a question
+   answer_html: This is an answer
+ - question: This is a question
+   answer_html: This is an answer
+   
 cta: 
   heading: 
   description_html: 
@@ -167,16 +166,16 @@ seo:
 <!-- Tuition -->
 <section class="grid grid-cols-3 gap-16 p-10p">
   <div>
-    <h2>Includes</h2>
-    <p>Lorem ipsum text</p>
+    <h2>{{page.tuition.includes.heading}}</h2>
+    <p>{{page.tuition.includes.description_html}}</p>
   </div>
-  <div class="bg-image-style" style="background-image: url('#');"></div>
+  <div class="bg-image-style" style="background-image: url('{{page.tuition.featured_image}}');"></div>
   <div>
-    <h2>Tuition</h2>
-    <h3>Pay in Full (save 15%)</h3>
-    <span>$3,300 USD</span>
-    <h3>Payment plan</h3>
-    <span>$1,100 USD X 3 Months</span>
+    <h2>{{page.tuition.pricing.heading}}</h2>
+    <h3>{{page.tuition.pricing.pay-in-full.heading}}</h3>
+    <span>{{page.tuition.pricing.pay-in-full.price}}</span>
+    <h3>{{page.tuition.pricing.payment-plan.heading}}</h3>
+    <span>{{page.tuition.pricing.payment-plan.price}}</span>
   </div>
 </section>
 
@@ -184,13 +183,13 @@ seo:
 <section>
   <h2>Frequently Asked Questions</h2>
   <ul class="list-none">
-    {% for item in site.data.faq-settings.faq %}
+    {% for item in page.faq %}
     <li x-data="{ open: false }" class="border-b border-dark my-8">
         <button @click="open = ! open" class="flex justify-between w-full">
             <h3 class="text-left mb-8 mr-8">{{item.question}}</h3>
 
-            <span x-show="!open">→</span>
-            <span x-show="open">&nbsp;&nbsp;↓</span>
+            <span x-show="!open">+</span>
+            <span x-show="open">-</span>
         </button>
         <div x-show="open" @click.outside="open = false">
             <p class="mb-8 mr-8 italic">{{item.answer_html}}</p>

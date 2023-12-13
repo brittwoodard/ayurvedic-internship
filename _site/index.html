@@ -140,16 +140,16 @@
 <!-- Tuition -->
 <section class="grid grid-cols-3 gap-16 p-10p">
   <div>
-    <h2>Includes</h2>
-    <p>Lorem ipsum text</p>
+    <h2>Your Tuition Covers</h2>
+    <p><ul><li>180 In-Person Training Hours</li><li>Minimum of 60 Client Encounters, Adhering to AAC's Guidelines</li><li>Daily Yoga Sessions</li><li>Guided At-Home Detox Program</li><li>Certificate of Completion</li><li>Official Transcripts</li><li>28 Nights of Accommodation</li><li>All Meals (Ayurvedic Cuisine)</li></ul></p>
   </div>
-  <div class="bg-image-style" style="background-image: url('#');"></div>
+  <div class="bg-image-style" style="background-image: url('/images/ayurvedic-internship-3.png');"></div>
   <div>
-    <h2>Tuition</h2>
+    <h2>Tuition Details</h2>
     <h3>Pay in Full (save 15%)</h3>
-    <span>$3,300 USD</span>
-    <h3>Payment plan</h3>
-    <span>$1,100 USD X 3 Months</span>
+    <span>$2,805 USD</span>
+    <h3>3-Month Payment Plan</h3>
+    <span>$1,100 X 3 Months</span>
   </div>
 </section>
 
@@ -157,6 +157,90 @@
 <section>
   <h2>Frequently Asked Questions</h2>
   <ul class="list-none">
+    
+    <li x-data="{ open: false }" class="border-b border-dark my-8">
+        <button @click="open = ! open" class="flex justify-between w-full">
+            <h3 class="text-left mb-8 mr-8">This is a question</h3>
+
+            <span x-show="!open">+</span>
+            <span x-show="open">-</span>
+        </button>
+        <div x-show="open" @click.outside="open = false">
+            <p class="mb-8 mr-8 italic">This is an answer</p>
+        </div>
+    </li>
+    
+    <li x-data="{ open: false }" class="border-b border-dark my-8">
+        <button @click="open = ! open" class="flex justify-between w-full">
+            <h3 class="text-left mb-8 mr-8">This is a question</h3>
+
+            <span x-show="!open">+</span>
+            <span x-show="open">-</span>
+        </button>
+        <div x-show="open" @click.outside="open = false">
+            <p class="mb-8 mr-8 italic">This is an answer</p>
+        </div>
+    </li>
+    
+    <li x-data="{ open: false }" class="border-b border-dark my-8">
+        <button @click="open = ! open" class="flex justify-between w-full">
+            <h3 class="text-left mb-8 mr-8">This is a question</h3>
+
+            <span x-show="!open">+</span>
+            <span x-show="open">-</span>
+        </button>
+        <div x-show="open" @click.outside="open = false">
+            <p class="mb-8 mr-8 italic">This is an answer</p>
+        </div>
+    </li>
+    
+    <li x-data="{ open: false }" class="border-b border-dark my-8">
+        <button @click="open = ! open" class="flex justify-between w-full">
+            <h3 class="text-left mb-8 mr-8">This is a question</h3>
+
+            <span x-show="!open">+</span>
+            <span x-show="open">-</span>
+        </button>
+        <div x-show="open" @click.outside="open = false">
+            <p class="mb-8 mr-8 italic">This is an answer</p>
+        </div>
+    </li>
+    
+    <li x-data="{ open: false }" class="border-b border-dark my-8">
+        <button @click="open = ! open" class="flex justify-between w-full">
+            <h3 class="text-left mb-8 mr-8">This is a question</h3>
+
+            <span x-show="!open">+</span>
+            <span x-show="open">-</span>
+        </button>
+        <div x-show="open" @click.outside="open = false">
+            <p class="mb-8 mr-8 italic">This is an answer</p>
+        </div>
+    </li>
+    
+    <li x-data="{ open: false }" class="border-b border-dark my-8">
+        <button @click="open = ! open" class="flex justify-between w-full">
+            <h3 class="text-left mb-8 mr-8">This is a question</h3>
+
+            <span x-show="!open">+</span>
+            <span x-show="open">-</span>
+        </button>
+        <div x-show="open" @click.outside="open = false">
+            <p class="mb-8 mr-8 italic">This is an answer</p>
+        </div>
+    </li>
+    
+    <li x-data="{ open: false }" class="border-b border-dark my-8">
+        <button @click="open = ! open" class="flex justify-between w-full">
+            <h3 class="text-left mb-8 mr-8">This is a question</h3>
+
+            <span x-show="!open">+</span>
+            <span x-show="open">-</span>
+        </button>
+        <div x-show="open" @click.outside="open = false">
+            <p class="mb-8 mr-8 italic">This is an answer</p>
+        </div>
+    </li>
     
 </ul>
 </section>
