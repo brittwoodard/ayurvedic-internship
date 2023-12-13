@@ -12,6 +12,11 @@ module.exports = {
         serif: ['cormorant-garamond', 'serif'],
         feature: ['freight-sans-pro', 'sans-serif'],
       },
+      color: {
+        light: '#F1E9E2',
+        medium: '#BA8B54',
+        dark: '#5E674F',
+      },
       extend: {
         spacing: {
           '5p': '5%',
