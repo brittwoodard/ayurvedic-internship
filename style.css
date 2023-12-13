@@ -7,7 +7,7 @@
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 @layer base {
-  
+
   body {
     @apply bg-light font-sans
   }
@@ -16,7 +16,13 @@
     margin-bottom: 1rem;
   }
 
-  h1, h2, h3, h4, h5, h6, p:last-child {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p:last-child {
     margin-bottom: 0;
   }
 
@@ -28,12 +34,13 @@
     margin-bottom: 0.5rem;
   }
 
-  }
+}
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @layer components {
+
   /* Typography Classes */
   .subtitle {
     font-size: 1.55rem;
@@ -84,4 +91,22 @@
   .bg-dark-style {
     @apply bg-dark text-light
   }
+
+  /* Dropdown Menu */
+  .dropdown-menu {
+    @apply border border-light
+  }
+
+  .dropdown-item {
+    @apply list-none border-b border-light my-2 p-2
+  }
+
+  .dropdown-item.last-item {
+    border-bottom: none;
+  }
+
+  .last-paragraph {
+    @apply mb-0
+  }
+
 }
