@@ -34,7 +34,7 @@
   }
 
   .text-serif-lg {
-    @apply font-serif text-[3rem] leading-[1em] mb-[0.5em]
+    @apply font-serif text-[3rem] leading-[1em] mb-[1rem]
   }
 
   /* Button Classes */
@@ -51,6 +51,15 @@
 
   /* Position Classes */
   .hero-banner {
-    @apply flex justify-center align-middle items-center
+    @apply flex justify-center align-middle items-center min-h-[90vh] text-center
+  }
+
+  /* Style Classes */
+  .bg-medium-style {
+    @apply bg-medium text-light
+  }
+
+  .bg-dark-style {
+    @apply bg-dark text-light
   }
 }

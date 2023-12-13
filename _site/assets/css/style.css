@@ -438,7 +438,7 @@ h1, h2, h3, h4, h5, h6, p:last-child {
     font-weight: 300;
   }
 .text-serif-lg {
-  margin-bottom: 0.5em;
+  margin-bottom: 1rem;
   font-family: cormorant-garamond, serif;
   font-size: 3rem;
   line-height: 1em;
@@ -468,9 +468,18 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 /* Position Classes */
 .hero-banner {
   display: flex;
+  min-height: 90vh;
   align-items: center;
   justify-content: center;
+  text-align: center;
   vertical-align: middle;
+}
+/* Style Classes */
+.bg-medium-style {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 139 84 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(241 233 226 / var(--tw-text-opacity));
 }
 .col-span-3 {
   grid-column: span 3 / span 3;
@@ -496,9 +505,6 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 }
 .min-h-\[60vh\] {
   min-height: 60vh;
-}
-.min-h-\[90vh\] {
-  min-height: 90vh;
 }
 .w-full {
   width: 100%;
@@ -572,6 +578,14 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 }
 .font-feature {
   font-family: freight-sans-pro, sans-serif;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .italic {
   font-style: italic;

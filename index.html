@@ -87,7 +87,7 @@ seo:
   hide-from-google: true
 ---
 <!-- Hero Banner -->
-<section class="min-h-[90vh] bg-image-style text-light text-center hero-banner" style="background-image: url('images/ayurvedic-internship-11.jpg');">
+<section class="bg-image-style text-light hero-banner" style="background-image: url('images/ayurvedic-internship-11.jpg');">
   <div>
     <h1 class="text-serif-lg">{{page.header.title}}</h1>
     <h2 class="subtitle">{{page.header.subtitle}}</h2>
@@ -96,12 +96,12 @@ seo:
 </section>
 
 <!-- Brief overview -->
-<section class="grid grid-cols-2">
-  <div>
+<section class="grid grid-cols-2 gap-16 bg-medium-style p-10p">
+  <div class="text-center text-xl">
     <p class="font-feature"><em>{{page.brief-overview.featured-text}}</em></p>
   </div>
   <div>
-    <h2>{{page.brief-overview.heading}}</h2>
+    <h2 class="text-serif-lg">{{page.brief-overview.heading}}</h2>
     <p>{{page.brief-overview.description_html}}</p>
   </div>
 </section>
