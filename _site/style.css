@@ -1,3 +1,10 @@
+/* Variables */
+:root {
+  --light: #f1e9e2;
+  --medium: #ba8b54;
+  --dark: #5e674f;
+}
+
 /* ----------- Import Tailwind -----*/
 @tailwind base;
 @tailwind components;
@@ -64,9 +71,22 @@
     @apply tracking-wider mb-2 uppercase
   }
 
+  .social-icon {
+    margin: 0.25rem 0.5rem 1rem 0.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+  }
+
   /* Button Classes */
   .button {
     @apply text-center py-2 px-4 bg-light/20 border border-light font-serif capitalize tracking-wider inline-block
+  }
+
+  .button:hover {
+    transition: 1s;
+    background-color: var(--light);
+    color: var(--dark);
   }
 
   /* Image Classes */
