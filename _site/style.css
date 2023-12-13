@@ -11,6 +11,16 @@
   p, h1, h2, h3, h4, h5, h6, div, section {
     border: 1px solid grey;
   }
+
+  p {
+    font-family: 'hind', 'sans-serif';
+    margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
   }
 
 
