@@ -487,6 +487,12 @@ h1, h2, h3, h4, h5, h6, p:last-child {
   --tw-text-opacity: 1;
   color: rgb(241 233 226 / var(--tw-text-opacity));
 }
+.bg-dark-style {
+  --tw-bg-opacity: 1;
+  background-color: rgb(94 103 79 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(241 233 226 / var(--tw-text-opacity));
+}
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -512,8 +518,14 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
+.min-h-\[60vh\] {
+  min-height: 60vh;
+}
 .w-full {
   width: 100%;
+}
+.w-auto {
+  width: auto;
 }
 .list-none {
   list-style-type: none;
@@ -526,6 +538,12 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
