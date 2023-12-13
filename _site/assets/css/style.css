@@ -471,11 +471,10 @@ h1, h2, h3, h4, h5, h6, p:last-child {
     background-position: center;
     background-repeat: no-repeat;
   }
-.bg-icons {
+.bg-icon {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20% 0;
   }
 /* Position Classes */
 .hero-banner {
@@ -526,6 +525,9 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 }
 .min-h-\[60vh\] {
   min-height: 60vh;
+}
+.min-h-\[90vh\] {
+  min-height: 90vh;
 }
 .w-auto {
   width: auto;
@@ -587,15 +589,15 @@ h1, h2, h3, h4, h5, h6, p:last-child {
   --tw-bg-opacity: 1;
   background-color: rgb(94 103 79 / var(--tw-bg-opacity));
 }
-.bg-medium {
-  --tw-bg-opacity: 1;
-  background-color: rgb(186 139 84 / var(--tw-bg-opacity));
-}
 .p-10p {
   padding: 10%;
 }
 .p-\[2rem\] {
   padding: 2rem;
+}
+.py-20p {
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 .pl-5p {
   padding-left: 5%;
@@ -627,6 +629,9 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 }
 .font-bold {
   font-weight: 700;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 .italic {
   font-style: italic;

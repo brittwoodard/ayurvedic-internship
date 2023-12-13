@@ -53,11 +53,10 @@
     background-repeat: no-repeat;
   }
 
-  .bg-icons {
+  .bg-icon {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20% 0;
   }
 
   /* Position Classes */
