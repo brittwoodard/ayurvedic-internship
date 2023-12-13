@@ -333,6 +333,13 @@ h1, h2, h3, h4, h5, h6, p {
 h1, h2, h3, h4, h5, h6, p:last-child {
     margin-bottom: 0;
   }
+ul {
+  margin-left: 1rem;
+  list-style-type: disc;
+}
+li {
+    margin-bottom: 0.5rem;
+  }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -449,6 +456,11 @@ h1, h2, h3, h4, h5, h6, p:last-child {
   font-size: 1.2rem;
   line-height: 1.4rem;
 }
+.subheading {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 /* Button Classes */
 .button {
   display: inline-block;
@@ -513,6 +525,9 @@ h1, h2, h3, h4, h5, h6, p:last-child {
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .flex {
   display: flex;
