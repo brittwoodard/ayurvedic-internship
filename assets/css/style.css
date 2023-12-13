@@ -626,13 +626,13 @@ li {
 .p-\[2rem\] {
   padding: 2rem;
 }
-.py-20p {
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
+}
+.py-20p {
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 .py-5p {
   padding-top: 5%;
