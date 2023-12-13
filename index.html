@@ -110,9 +110,11 @@ seo:
 <section class="p-10p grid grid-cols-3 gap-8">
   {% for item in page.features %}
   <div>
-    <div class="bg-imgage-style min-h-[60vh] border border-medium" style="background-image: url('{{item.featured_image}}');"></div>
-    <h3>{{item.feature}}</h3>
-    <p>{{item.description_html}}</p>
+    <div class="bg-image-style min-h-[50vh] border border-medium" style="background-image: url('{{item.featured_image}}');"></div>
+    <div class="text-center mt-4">
+      <h3 class="text-serif-sm text-dark">{{item.feature}}</h3>
+      <p>{{item.description_html}}</p>
+    </div>
   </div>
   {% endfor %}
 </section>
