@@ -7,7 +7,10 @@
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 @layer base {
-
+  /* temporary styles */
+  p, h1, h2, h3, h4, h5, h6, div, section {
+    border: 1px solid grey;
+  }
   }
 
 
