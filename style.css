@@ -51,13 +51,11 @@
 
   /* Typography Classes */
   .subtitle {
-    font-size: 1.55rem;
-    margin-bottom: 0.5em;
-    font-weight: 300;
+    @apply text-[1.15rem] md:text-[1.55rem] mb-[0.5em] font-light
   }
 
   .text-serif-lg {
-    @apply font-serif text-[3rem] leading-[1em] mb-[1rem]
+    @apply font-serif text-[2.5rem] md:text-[3rem] leading-[1em] mb-[1rem]
   }
 
   .text-serif-md {

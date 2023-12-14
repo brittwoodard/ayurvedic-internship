@@ -456,15 +456,25 @@ li {
 }
 /* Typography Classes */
 .subtitle {
+  margin-bottom: 0.5em;
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .subtitle {
     font-size: 1.55rem;
-    margin-bottom: 0.5em;
-    font-weight: 300;
   }
+}
 .text-serif-lg {
   margin-bottom: 1rem;
   font-family: cormorant-garamond, serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1em;
+}
+@media (min-width: 768px) {
+  .text-serif-lg {
+    font-size: 3rem;
+  }
 }
 .text-serif-md {
   margin-bottom: 1rem;
@@ -565,6 +575,9 @@ li {
 .last-paragraph {
   margin-bottom: 0px;
 }
+.order-first {
+  order: -9999;
+}
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -647,6 +660,9 @@ li {
 .p-\[2rem\] {
   padding: 2rem;
 }
+.p-5p {
+  padding: 5%;
+}
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
@@ -725,3 +741,18 @@ li {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+
+@media (min-width: 768px) {
+  .md\:order-none {
+    order: 0;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+}
