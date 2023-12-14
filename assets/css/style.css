@@ -596,6 +596,9 @@ li {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .flex {
   display: flex;
 }
@@ -737,6 +740,9 @@ li {
 @media (min-width: 768px) {
   .md\:order-none {
     order: 0;
+  }
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
   .md\:block {
     display: block;
