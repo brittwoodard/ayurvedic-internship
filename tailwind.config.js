@@ -16,6 +16,7 @@ module.exports = {
         light: '#f1e9e2',
         medium: '#ba8b54',
         dark: '#5e674f',
+        black: '#2f3327',
       },
       extend: {
         spacing: {

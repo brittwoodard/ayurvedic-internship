@@ -3,6 +3,7 @@
   --light: #f1e9e2;
   --medium: #ba8b54;
   --dark: #5e674f;
+  --black: #25291F;
 }
 
 /* ----------- Import Tailwind -----*/
@@ -333,6 +334,8 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(241 233 226 / var(--tw-bg-opacity));
   font-family: hind, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(47 51 39 / var(--tw-text-opacity));
 }
 h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 1rem;
@@ -504,7 +507,7 @@ li {
   letter-spacing: 0.05em;
 }
 .button:hover {
-    transition: 1s;
+    transition: 0.5s;
     background-color: var(--light);
     color: var(--dark);
   }
@@ -703,6 +706,10 @@ li {
 }
 .italic {
   font-style: italic;
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(47 51 39 / var(--tw-text-opacity));
 }
 .text-dark {
   --tw-text-opacity: 1;
