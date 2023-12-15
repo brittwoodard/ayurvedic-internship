@@ -1,0 +1,47 @@
+---
+layout: default
+teacher: 
+  heading: Dr. Resmi V. Rajagopal
+  subheading: BAMS, MS (Ayurveda Gynec) PGDYN
+  description_html: Dr. Resmi V. Rajagopal is a dedicated Ayurveda Physician, born and nurtured in the Ayurvedic-rich environment of Kerala, India. Her journey in Ayurvedic medicine commenced in 2007, marked by her graduation from Pankajakasthuri Ayurveda Medical College in Thiruvananthapuram, followed by a master’s degree from the prestigious ITRA Jamnagar. Her academic path was enhanced by additional training in yoga therapy, beauty care, and pulse diagnosis.</p><p>Throughout her career, Dr. Rajagopal has developed a keen expertise in patient care, diagnostic skills, and hands-on surgical experiences, infused with the practical wisdom and spiritual insights imparted by her GURUs. Her approach to health and wellness extends beyond traditional learning, embodying a holistic perspective.</p><p>Dr. Rajagopal's passion for education led her to the role of assistant professor at the SDM College of Ayurveda in Udupi, India, where she played a pivotal role in mentoring the next generation of Ayurveda students. This experience significantly enriched her skills in both theoretical and practical aspects of Ayurvedic medicine.
+  featured_image: /images/ayurvedic-internship-8.jpg
+---
+<!-- Teacher Bio -->
+<section class="grid md:grid-cols-2 gap-8 mt-8">
+    <div class="bg-dark-style p-10p">
+        <h2 class="text-serif-lg">{{page.teacher.heading}}</h2>
+        <span class="uppercase mb-2 inline-block">{{page.teacher.subheading}}</span>
+        <p>{{page.teacher.description_html}}</p>
+    </div>
+    <div class="bg-image-style min-h-[90vh]" style="background-image: url('{{page.teacher.featured_image}}');"></div>
+</section>
+
+<!-- Contact Form -->
+<section class="p-10p">
+    <form>
+        <div class="grid sm:grid-cols-2 gap-8 mb-4">
+            <div>
+                <input type="text" id="first-name" name="first-name">
+                <label for="first-name"> First Name:</label>
+            </div>
+    
+            <div>
+                <input type="text" id="last-name" name="last-name">
+                <label for="last-name"> Last Name:</label>
+            </div>
+        </div>
+    
+        <div class="mb-4">
+            <input type="email" id="email" name="email">
+            <label for="email"> Email:</label>
+        </div>
+    
+        <div>
+            <textarea id="message" name="message" rows="4" placeholder=" Message" class="border border-light"></textarea>
+        </div>
+    
+        <div class="flex justify-end">
+            <button type="submit" class="link mt-4  mb-12 sm:mb-0">Send</button>
+        </div>
+    </form>
+</section>

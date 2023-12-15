@@ -49,6 +49,24 @@
 
 @layer components {
 
+    /* Contact Form */
+    form input,
+    form textarea {
+      @apply block border-b border-medium bg-light w-full
+    }
+  
+    input::placeholder, textarea::placeholder {
+      @apply text-medium border-medium text-base
+    }
+  
+    input::placeholder, textarea::placeholder {
+      @apply text-medium border-medium
+    }
+  
+    :focus-visible {
+      @apply focus:outline-none focus:border-b focus:border-medium
+    }
+
   /* Typography Classes */
   .subtitle {
     @apply text-[1.15rem] md:text-[1.55rem] mb-[0.5em] font-light
@@ -56,7 +74,7 @@
 
   .text-serif-lg {
     @apply font-serif text-[2.5rem] md:text-[3rem] leading-[1em] mb-[1rem]
-  }
+  } 
 
   .text-serif-md {
     @apply font-serif text-[2.2rem] leading-[1em] mb-[1rem] capitalize
