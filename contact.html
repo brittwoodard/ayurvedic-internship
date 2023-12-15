@@ -5,6 +5,12 @@ teacher:
   subheading: BAMS, MS (Ayurveda Gynec) PGDYN
   description_html: Dr. Resmi V. Rajagopal is a dedicated Ayurveda Physician, born and nurtured in the Ayurvedic-rich environment of Kerala, India. Her journey in Ayurvedic medicine commenced in 2007, marked by her graduation from Pankajakasthuri Ayurveda Medical College in Thiruvananthapuram, followed by a master’s degree from the prestigious ITRA Jamnagar. Her academic path was enhanced by additional training in yoga therapy, beauty care, and pulse diagnosis.</p><p>Throughout her career, Dr. Rajagopal has developed a keen expertise in patient care, diagnostic skills, and hands-on surgical experiences, infused with the practical wisdom and spiritual insights imparted by her GURUs. Her approach to health and wellness extends beyond traditional learning, embodying a holistic perspective.</p><p>Dr. Rajagopal's passion for education led her to the role of assistant professor at the SDM College of Ayurveda in Udupi, India, where she played a pivotal role in mentoring the next generation of Ayurveda students. This experience significantly enriched her skills in both theoretical and practical aspects of Ayurvedic medicine.
   featured_image: /images/ayurvedic-internship-8.jpg
+cta: 
+  heading: Advance your career in Ayurvedic wellness
+  description_html: Take a definitive step towards completing your Ayurvedic education and starting your journey as a professional. Join our waitlist today and be the first to secure your place in this life-changing Ayurvedic program.
+  button: 
+    text: Join the waitlist
+    url: 
 ---
 <!-- Teacher Bio -->
 <section class="grid md:grid-cols-2 gap-8 mt-8">
@@ -22,26 +28,38 @@ teacher:
         <div class="grid sm:grid-cols-2 gap-8 mb-4">
             <div>
                 <input type="text" id="first-name" name="first-name">
-                <label for="first-name"> First Name:</label>
+                <label for="first-name" class="form-text">First Name</label>
             </div>
     
             <div>
                 <input type="text" id="last-name" name="last-name">
-                <label for="last-name"> Last Name:</label>
+                <label for="last-name" class="form-text">Last Name</label>
             </div>
         </div>
     
         <div class="mb-4">
             <input type="email" id="email" name="email">
-            <label for="email"> Email:</label>
+            <label for="email" class="form-text">Email</label>
         </div>
     
         <div>
-            <textarea id="message" name="message" rows="4" placeholder=" Message" class="border border-light"></textarea>
+            <textarea id="message" name="message" rows="4" placeholder=" Message" class="border border-medium"></textarea>
         </div>
     
         <div class="flex justify-end">
-            <button type="submit" class="link mt-4  mb-12 sm:mb-0">Send</button>
+            <button type="submit" class="button mt-4 mb-12 sm:mb-0">Send</button>
         </div>
     </form>
 </section>
+
+<!-- CTA -->
+<section class="grid md:grid-cols-4 gap-4 md:gap-16 bg-dark-style py-5p px-10p border-b border-light text-light">
+    <div class="col-span-3">
+      <h2 class="text-serif-md">{{page.cta.heading}}</h2>
+      <p>{{page.cta.description_html}}</p>
+      <a class="button md:hidden" href="{{page.cta.button.url}}">{{page.cta.button.text}}</a>
+    </div>
+    <div class="hidden md:block">
+      <a class="button" href="{{page.cta.button.url}}">{{page.cta.button.text}}</a>
+    </div>
+  </section>

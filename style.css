@@ -67,6 +67,10 @@
       @apply focus:outline-none focus:border-b focus:border-medium
     }
 
+    .form-text {
+      @apply text-medium tracking-wider
+    }
+
   /* Typography Classes */
   .subtitle {
     @apply text-[1.15rem] md:text-[1.55rem] mb-[0.5em] font-light
