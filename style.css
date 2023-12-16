@@ -42,6 +42,11 @@
     margin-bottom: 0.5rem;
   }
 
+  a:hover {
+    color: var(--medium);
+    transition: 0.5s;
+  }
+
 }
 
 
@@ -104,10 +109,20 @@
     @apply text-center py-2 px-4 bg-light/20 border border-light font-serif capitalize tracking-wider inline-block
   }
 
+  .button-dark {
+    @apply text-center py-2 px-4 font-serif capitalize tracking-wider inline-block border border-medium text-medium
+  }
+
   .button:hover {
     transition: 0.5s;
     background-color: var(--light);
     color: var(--dark);
+  }
+
+  .button-dark:hover {
+    background-color: var(--medium);
+    color: var(--light);
+    transition: 0.5s;
   }
 
   /* Image Classes */
