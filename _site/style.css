@@ -20,6 +20,15 @@
     @apply bg-light font-sans text-black
   }
 
+  nav {
+    @apply py-2 px-8 font-serif uppercase tracking-wider
+  }
+
+  nav:hover {
+    color: var(--medium);
+    transition: 0.5s;
+  }
+
   h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 1rem;
   }
@@ -40,11 +49,6 @@
 
   li {
     margin-bottom: 0.5rem;
-  }
-
-  a:hover {
-    color: var(--medium);
-    transition: 0.5s;
   }
 
 }

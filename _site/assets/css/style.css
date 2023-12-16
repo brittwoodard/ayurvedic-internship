@@ -337,6 +337,19 @@ body {
   --tw-text-opacity: 1;
   color: rgb(47 51 39 / var(--tw-text-opacity));
 }
+nav {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: cormorant-garamond, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+nav:hover {
+    color: var(--medium);
+    transition: 0.5s;
+  }
 h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 1rem;
   }
@@ -355,10 +368,6 @@ ul {
 }
 li {
     margin-bottom: 0.5rem;
-  }
-a:hover {
-    color: var(--medium);
-    transition: 0.5s;
   }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -639,6 +648,15 @@ input::placeholder, textarea::placeholder {
 .last-paragraph {
   margin-bottom: 0px;
 }
+.absolute {
+  position: absolute;
+}
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .order-first {
   order: -9999;
 }
@@ -751,14 +769,6 @@ input::placeholder, textarea::placeholder {
   padding-left: 5%;
   padding-right: 5%;
 }
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 .py-20p {
   padding-top: 20%;
   padding-bottom: 20%;
@@ -804,9 +814,6 @@ input::placeholder, textarea::placeholder {
 }
 .italic {
   font-style: italic;
-}
-.tracking-wider {
-  letter-spacing: 0.05em;
 }
 .text-black {
   --tw-text-opacity: 1;
