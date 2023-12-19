@@ -1,0 +1,12 @@
+<section class="grid md:grid-cols-2 gap-8 p-10p bg-dark-style">
+    <div class="flex flex-col justify-center">
+        <h2 class="text-serif-lg">{{page.teacher.heading}}</h2>
+        <p>{{page.teacher.description_html}}</p>
+        <div class="w-auto cursor-pointer">
+            <a href="/contact.html" class="button">Learn more</a>
+        </div>
+    </div>
+    <div class="bg-image-style min-h-[60vh] order-first md:order-none"
+        style="background-image: url('{{page.teacher.image.featured_image}}'); background-position: {{page.teacher.image.image_focus}};">
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<section>
+    <div class="grid md:grid-cols-2 gap-8 md:gap-16 bg-medium-style p-10p">
+        <div class="text-center text-xl">
+            <p class="font-feature"><em>{{page.brief-overview.featured-text}}</em></p>
+        </div>
+        <div>
+            <h2 class="text-serif-lg">{{page.brief-overview.heading}}</h2>
+            <p>{{page.brief-overview.description_html}}</p>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="p-10p grid md:grid-cols-3 gap-16">
+        {% for item in page.features %}
+        <div>
+            <div class="bg-image-style min-h-[60vh] border border-medium"
+                style="background-image: url('{{item.featured_image}}');"></div>
+            <div class="text-center mt-4">
+                <h3 class="text-serif-sm text-dark">{{item.feature}}</h3>
+                <p>{{item.description_html}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

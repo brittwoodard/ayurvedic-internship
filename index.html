@@ -22,9 +22,9 @@ features:
    description_html: This internship focuses on refining your clinical assessment skills, offering in-depth exploration of Ayurvedic diagnostic techniques.
 teacher: 
   heading: Your Teacher
-  description_html: Led by an esteemed Ayurvedic doctor with extensive years of practice and teaching, this internship offers unparalleled expertise in Ayurvedic medicine. The lead teacher embodies a wealth of knowledge and a passion for guiding students on their Ayurvedic journey.
+  description_html: Led by an esteemed Ayurvedic doctor with extensive years of practice and teaching, this internship offers unparalleled expertise in Ayurvedic medicine. Dr. Resmi V. Rajagopal embodies a wealth of knowledge and a passion for guiding students on their Ayurvedic journey.
   image: 
-    featured_image: /images/ayurvedic-internship-8.jpg
+    featured_image: /images/ayurvedic-internship-12.jpg
     image_focus: 
 retreat-overview:
   heading: Internship Retreat Overview
@@ -89,138 +89,37 @@ seo:
   hide-from-google: true
 ---
 <!-- Hero Banner -->
-<section class="bg-image-style text-light hero-banner p-5p" style="background-image: url('images/ayurvedic-internship-11.jpg');">
-  <nav class="absolute top-0 right-0">
-    <a href="/contact.html" class="text-dark lg:text-light">Contact</a>
-  </nav>
-  <div>
-    <h1 class="text-serif-lg">{{page.header.title}}</h1>
-    <h2 class="subtitle">{{page.header.subtitle}}</h2>
-    <a data-formkit-toggle="1fec54076b" href="https://embodied-creative.ck.page/1fec54076b" class="button mt-4 join-waitlist">Join the waitlist</a>
-  </div>
-</section>
-
-<!-- Brief overview -->
-<section class="grid md:grid-cols-2 gap-8 md:gap-16 bg-medium-style p-10p">
-  <div class="text-center text-xl">
-    <p class="font-feature"><em>{{page.brief-overview.featured-text}}</em></p>
-  </div>
-  <div>
-    <h2 class="text-serif-lg">{{page.brief-overview.heading}}</h2>
-    <p>{{page.brief-overview.description_html}}</p>
-  </div>
-</section>
+{% include hero-banner.html %}
 
 <!-- Features -->
-<section class="p-10p grid md:grid-cols-3 gap-16">
-  {% for item in page.features %}
-  <div>
-    <div class="bg-image-style min-h-[60vh] border border-medium" style="background-image: url('{{item.featured_image}}');"></div>
-    <div class="text-center mt-4">
-      <h3 class="text-serif-sm text-dark">{{item.feature}}</h3>
-      <p>{{item.description_html}}</p>
-    </div>
-  </div>
-  {% endfor %}
-</section>
+{% include features.html %}
 
 <!-- Your Teacher -->
-<section class="grid md:grid-cols-2 gap-8 p-10p bg-dark-style">
-  <div class="flex flex-col justify-center">
-    <h2 class="text-serif-lg">{{page.teacher.heading}}</h2>
-    <p>{{page.teacher.description_html}}</p>
-    <div class="w-auto cursor-pointer">
-      <a href="/contact.html" class="button">Learn more</a>
-    </div>
-  </div>
-  <div class="bg-image-style min-h-[60vh] order-first md:order-none" style="background-image: url('{{page.teacher.image.featured_image}}'); background-position: {{page.teacher.image.image_focus}};"></div>
-</section>
+{% include teacher-intro.html %}
 
 <!-- Retreat Overview -->
 <section class="p-10p bg-medium-style">
   <h2 class="text-serif-lg text-left md:text-center">{{page.retreat-overview.heading}}</h2>
   <div class="grid md:grid-cols-2 md:divide-x">
-    <div class="md:pr-5p text-left md:text-right mb-4 md:mb-0">
-      <p>{{page.retreat-overview.description-left_html}}</p>
-    </div>
-    <div class="md:pl-5p">
-      <p>{{page.retreat-overview.description-right_html}}</p>
-    </div>
+      <div class="md:pr-5p text-left md:text-right mb-4 md:mb-0">
+          <p>{{page.retreat-overview.description-left_html}}</p>
+      </div>
+      <div class="md:pl-5p">
+          <p>{{page.retreat-overview.description-right_html}}</p>
+      </div>
 </section>
 
 <!-- Features Banner -->
-<section class="grid md:grid-cols-3 gap-16 p-[2rem]">
-  {% for item in page.features-banner %}
-  <div class="bg-icon py-20p text-center font-serif text-black font-bold text-[1.3rem] capitalize" style="background-image: url('{{item.background_image}}');">
-    <span>{{item.feature}}s</span>
-  </div>
-  {% endfor %}
-</section>
+{% include banner-features.html %}
 
 <!-- Room & Board -->
-<section class="grid md:grid-cols-2 gap-8">
-  <!-- Row 1 -->
-  <div class="bg-image-style min-h-[90vh]" style="background-image: url('{{page.location.featured_image}}');"></div>
-  <div class="bg-dark-style p-10p flex flex-col justify-center">
-    <h2 class="text-serif-lg">{{page.location.heading}}</h2>
-    <p>{{page.location.description_html}}</p>
-  </div>
-  <!-- Row 2 -->
-  <div class="bg-medium-style p-10p flex flex-col justify-center order-last md:order-none">
-    <h2 class="text-serif-lg">{{page.room-and-board.heading}}</h2>
-    <p>{{page.room-and-board.description_html}}</p>
-  </div>
-  <div class="bg-image-style min-h-[90vh]" style="background-image: url('{{page.room-and-board.featured_image}}');"></div>
-</section>
+{% include room-and-board.html %}
 
 <!-- Tuition -->
-<section class="grid md:grid-cols-3 gap-4 md:gap-16 p-10p">
-  <div>
-    <h2 class="text-serif-lg">{{page.tuition.includes.heading}}</h2>
-    <p>{{page.tuition.includes.description_html}}</p>
-  </div>
-  <div class="bg-icon min-h-[20vh] order-last md:order-none" style="background-image: url('{{page.tuition.featured_image}}');"></div>
-  <div>
-    <h2 class="text-serif-lg">{{page.tuition.pricing.heading}}</h2>
-    <h3 class="subheading">{{page.tuition.pricing.pay-in-full.heading}}</h3>
-    <span>{{page.tuition.pricing.pay-in-full.price}}</span>
-    <h3 class="subheading mt-8">{{page.tuition.pricing.payment-plan.heading}}</h3>
-    <span>{{page.tuition.pricing.payment-plan.price}}</span>
-  </div>
-</section>
+{% include tuition.html %}
 
 <!-- FAQ -->
-<section class="bg-medium-style p-10p">
-  <h2 class="text-serif-lg text-center">Frequently Asked Questions</h2>
-  <ul class="dropdown-menu ml-0">
-    {% for item in page.faq %}
-    <li x-data="{ open: false }" class="dropdown-item {% if forloop.last %}last-item{% endif %}">
-        <button @click="open = ! open" class="flex justify-between w-full">
-            <h3 class="mr-8 text-left">{{item.question}}</h3>
-            <span x-show="!open">+</span>
-            <span x-show="open">-</span>
-        </button>
-        <div x-show="open" @click.outside="open = false">
-            {% assign paragraphs = item.answer_html | split: '<p>' %}
-                {% for paragraph in paragraphs %}
-                {% if paragraph != '' %}
-            <p class="mr-8 mt-4 italic {% if forloop.last %} last-paragraph {% endif %}">{{ paragraph | strip_html }}</p>
-            {% endif %}
-            {% endfor %}
-        </div>
-    </li>
-    {% endfor %}
-</ul>
-</section>
+{% include faq.html %}
 
 <!-- CTA -->
-<section class="grid md:grid-cols-4 gap-4 md:gap-16 bg-dark-style py-5p px-10p border-b border-light text-light">
-  <div class="col-span-3">
-    <h2 class="text-serif-md">{{page.cta.heading}}</h2>
-    <p>{{page.cta.description_html}}</p>
-    <a class="button md:hidden" href="{{page.cta.button.url}}">{{page.cta.button.text}}</a>
-  </div>
-  <div class="hidden md:block">
-    <a data-formkit-toggle="1fec54076b" href="https://embodied-creative.ck.page/1fec54076b"  class="button">{{page.cta.button.text}}</a>
-  </div>
-</section>
+{% include cta.html %}

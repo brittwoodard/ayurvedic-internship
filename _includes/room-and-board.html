@@ -1,0 +1,15 @@
+<section class="grid md:grid-cols-2 gap-8">
+    <!-- Row 1 -->
+    <div class="bg-image-style min-h-[90vh]" style="background-image: url('{{page.location.featured_image}}');"></div>
+    <div class="bg-dark-style p-10p flex flex-col justify-center">
+        <h2 class="text-serif-lg">{{page.location.heading}}</h2>
+        <p>{{page.location.description_html}}</p>
+    </div>
+    <!-- Row 2 -->
+    <div class="bg-medium-style p-10p flex flex-col justify-center order-last md:order-none">
+        <h2 class="text-serif-lg">{{page.room-and-board.heading}}</h2>
+        <p>{{page.room-and-board.description_html}}</p>
+    </div>
+    <div class="bg-image-style min-h-[90vh]" style="background-image: url('{{page.room-and-board.featured_image}}');">
+    </div>
+</section>

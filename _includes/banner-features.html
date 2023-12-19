@@ -1,0 +1,8 @@
+<section class="grid md:grid-cols-3 gap-16 p-[2rem]">
+    {% for item in page.features-banner %}
+    <div class="bg-icon py-20p text-center font-serif text-black font-bold text-[1.3rem] capitalize"
+        style="background-image: url('{{item.background_image}}');">
+        <span>{{item.feature}}s</span>
+    </div>
+    {% endfor %}
+</section>
