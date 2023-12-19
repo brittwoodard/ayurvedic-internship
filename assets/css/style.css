@@ -350,7 +350,13 @@ nav:hover {
     color: var(--medium);
     transition: 0.5s;
   }
-h1, h2, h3, h4, h5, h6, p {
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
     margin-bottom: 1rem;
   }
 h1,
@@ -469,7 +475,7 @@ li {
 }
 /* Contact Form */
 form input,
-    form textarea {
+  form textarea {
   display: block;
   width: 100%;
   border-bottom-width: 1px;
@@ -708,6 +714,9 @@ input::placeholder, textarea::placeholder {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
+.w-\[50\%\] {
+  width: 50%;
+}
 .w-auto {
   width: auto;
 }
@@ -731,6 +740,9 @@ input::placeholder, textarea::placeholder {
 }
 .gap-16 {
   gap: 4rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-4 {
   gap: 1rem;
@@ -850,6 +862,12 @@ input::placeholder, textarea::placeholder {
 @media (min-width: 768px) {
   .md\:order-none {
     order: 0;
+  }
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
   .md\:mb-0 {
     margin-bottom: 0px;
