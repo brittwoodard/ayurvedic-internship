@@ -12,7 +12,7 @@
                 {% assign paragraphs = item.answer_html | split: '<p>' %}
                     {% for paragraph in paragraphs %}
                     {% if paragraph != '' %}
-                <p class="mr-8 mt-4 italic {% if forloop.last %} last-paragraph {% endif %}">{{ paragraph | strip_html
+                <p class="mr-8 mt-4 italic {% if forloop.last %} last-paragraph {% endif %}">{{ paragraph | safe
                     }}</p>
                 {% endif %}
                 {% endfor %}

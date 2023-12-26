@@ -199,6 +199,22 @@
         
         <li x-data="{ open: false }" class="dropdown-item ">
             <button @click="open = ! open" class="flex justify-between w-full">
+                <h3 class="mr-8 text-left">What are the upcoming dates for the Ayurvedic Internship Retreat?</h3>
+                <span x-show="!open">+</span>
+                <span x-show="open">-</span>
+            </button>
+            <div x-show="open" @click.outside="open = false">
+                
+                    
+                    
+                <p class="mr-8 mt-4 italic  last-paragraph ">We are currently in the process of finalizing the inspiring journey for our next Ayurvedic Internship Retreat, which is scheduled for Spring 2024. To ensure you don't miss the announcement and to be among the first to receive all the essential details, we warmly invite you to join our waitlist. <a data-formkit-toggle="1fec54076b" href="https://embodied-creative.ck.page/1fec54076b" class="link">Click here to join the waitlist</a> and take the next step towards advancing your career in Ayurvedic wellness.</p>
+                
+                
+            </div>
+        </li>
+        
+        <li x-data="{ open: false }" class="dropdown-item ">
+            <button @click="open = ! open" class="flex justify-between w-full">
                 <h3 class="mr-8 text-left">Can I take this internship if I am not enrolled in an Ayurvedic Health Counselor or Ayurvedic Practitioner program?</h3>
                 <span x-show="!open">+</span>
                 <span x-show="open">-</span>
