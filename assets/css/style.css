@@ -368,9 +368,6 @@ h1,
   p:last-child {
     margin-bottom: 0;
   }
-a {
-    border-bottom: 1px solid var(--light);
-  }
 ul {
   margin-left: 1rem;
   list-style-type: disc;
@@ -602,6 +599,9 @@ input::placeholder, textarea::placeholder {
     background-color: var(--medium);
     color: var(--light);
     transition: 0.5s;
+  }
+.link {
+    border-bottom: 1px solid var(--light);
   }
 /* Image Classes */
 .bg-image-style {

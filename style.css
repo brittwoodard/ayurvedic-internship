@@ -49,10 +49,6 @@
     margin-bottom: 0;
   }
 
-  a {
-    border-bottom: 1px solid var(--light);
-  }
-
   ul {
     @apply list-disc ml-4
   }
@@ -137,6 +133,10 @@
     background-color: var(--medium);
     color: var(--light);
     transition: 0.5s;
+  }
+
+  .link {
+    border-bottom: 1px solid var(--light);
   }
 
   /* Image Classes */
