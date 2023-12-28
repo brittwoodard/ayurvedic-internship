@@ -365,6 +365,62 @@
     <p class="font-light">Designed & Developed by <a href="https://embodiedcreativeagency.com" target="_blank">Embodied Creative</a></p>
 </footer>
 
+
+    <!-- Cookie Concent -->
+    <div id="cookieConsentBanner" class="p-2 bg-light m-2 md:w-[40%] fixed left-0 bottom-0 z-20">
+    <div class="border border-dark bg-light p-5p">
+        <div class="flex justify-between">
+            <div class="text-center">
+                <span>We value your privacy, and to provide the best possible experience, this website uses cookies. By
+                    accepting this agreement, you automatically consent to the use of cookies.</span>
+            </div>
+            <div class="text-right text-lg cursor-pointer ml-4">
+                <span id="close-cookie-banner">X</span>
+            </div>
+        </div>
+        <div class="flex justify-center mt-4">
+            <a id="acceptCookies" class="button-cookies cursor-pointer">Accept</a>
+            <a id="declineCookies" class="mx-4 button-cookies cursor-pointer">Decline</a>
+        </div>
+    </div>
+</div>
+
+<!-- Google tag (gtag.js) -->
+
+<!-- JS -->
+<script>
+    // Function to handle accept
+    function acceptCookies() {
+        // Set a cookie to remember the choice
+        document.cookie = "cookiesAccepted=true; path=/; max-age=31536000"; // max-age is set for 1 year
+        // Hide the cookie banner
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+    }
+
+    // Function to handle decline
+    function declineCookies() {
+        // Hide the cookie banner
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+        // Optionally, implement what should happen when cookies are declined (e.g., disable analytics)
+    }
+
+    // Event listeners for the buttons
+    document.getElementById('acceptCookies').addEventListener('click', acceptCookies);
+    document.getElementById('declineCookies').addEventListener('click', declineCookies);
+
+    // Function to check cookie consent
+    function checkCookieConsent() {
+        if (document.cookie.indexOf("cookiesAccepted=true") === -1) {
+            // Show the cookie banner if not yet accepted
+            document.getElementById('cookieConsentBanner').style.display = 'block';
+        }
+    }
+
+    // Check the cookie consent on page load
+    document.addEventListener('DOMContentLoaded', checkCookieConsent);
+
+</script>
+
     <!-- Popup -->
     <script async data-uid="1fec54076b" src="https://embodied-creative.ck.page/1fec54076b/index.js"></script>
 

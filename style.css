@@ -139,6 +139,15 @@
     border-bottom: 1px solid var(--light);
   }
 
+  .button-cookies {
+    @apply mx-4 px-4 py-2 text-sm uppercase flex items-center text-center bg-dark text-light
+  }
+
+  .button-cookies:hover {
+    background-color: var(--medium);
+    transition: 0.5s
+  }
+
   /* Image Classes */
   .bg-image-style {
     background-size: cover;
