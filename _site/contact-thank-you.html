@@ -100,7 +100,7 @@
 
 
     <!-- Cookie Concent -->
-    <div id="cookieConsentBanner" class="p-2 bg-light m-2 md:w-[40%] fixed left-0 bottom-0 z-20">
+    <div id="cookieConsentBanner" class="p-2 bg-light m-2 md:w-[40%] fixed left-0 bottom-0 z-20 hidden">
     <div class="border border-dark bg-light p-5p">
         <div class="flex justify-between">
             <div class="text-center">
@@ -119,6 +119,14 @@
 </div>
 
 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5PMXNHH7K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F5PMXNHH7K');
+</script>
 
 <!-- JS -->
 <script>
@@ -126,24 +134,37 @@
     function acceptCookies() {
         // Set a cookie to remember the choice
         document.cookie = "cookiesAccepted=true; path=/; max-age=31536000"; // max-age is set for 1 year
+
         // Hide the cookie banner
         document.getElementById('cookieConsentBanner').style.display = 'none';
+
+        // Load Google Analytics script
+        loadGAScript();
     }
 
     // Function to handle decline
     function declineCookies() {
         // Hide the cookie banner
         document.getElementById('cookieConsentBanner').style.display = 'none';
-        // Optionally, implement what should happen when cookies are declined (e.g., disable analytics)
     }
 
     // Event listeners for the buttons
     document.getElementById('acceptCookies').addEventListener('click', acceptCookies);
     document.getElementById('declineCookies').addEventListener('click', declineCookies);
 
+    // Function to load Google Analytics Script
+    function loadGAScript() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-F5PMXNHH7K');
+    }
+
     // Function to check cookie consent
     function checkCookieConsent() {
-        if (document.cookie.indexOf("cookiesAccepted=true") === -1) {
+        if (document.cookie.indexOf("cookiesAccepted=true") !== -1) {
+            loadGAScript();
+        } else {
             // Show the cookie banner if not yet accepted
             document.getElementById('cookieConsentBanner').style.display = 'block';
         }
