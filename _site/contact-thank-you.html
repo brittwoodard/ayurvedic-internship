@@ -121,11 +121,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5PMXNHH7K"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-F5PMXNHH7K');
+    gtag('config', 'G-F5PMXNHH7K');
 </script>
 
 <!-- JS -->
@@ -148,9 +148,17 @@
         document.getElementById('cookieConsentBanner').style.display = 'none';
     }
 
-    // Event listeners for the buttons
+    // Event listeners for the Accept and Decline buttons
     document.getElementById('acceptCookies').addEventListener('click', acceptCookies);
     document.getElementById('declineCookies').addEventListener('click', declineCookies);
+
+    // Function to close the cookie banner (added for the 'X' button)
+    function closeCookieBanner() {
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+    }
+
+    // Event listener for the 'X' button
+    document.getElementById('close-cookie-banner').addEventListener('click', closeCookieBanner);
 
     // Function to load Google Analytics Script
     function loadGAScript() {

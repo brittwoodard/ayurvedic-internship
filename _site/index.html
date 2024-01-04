@@ -13,7 +13,7 @@
 
 <!-- SEO Metadata -->
 <title> Ayurvedic Internship in Ubud, Bali </title> 
-<meta name="description" content="Gail clinical experience at this Ayurvedic Internship Retreat in Ubud, Bali, designed for Ayurvedic Health Counselor and Practitioner students. This experience offers hands-on training with a focus on one-on-one client consultations and Ayurvedic assessment methods. The program, led by an experienced Ayurvedic doctor, includes in-depth exploration of diagnostic techniques, client encounter experiences, and practical clinical skills. The retreat takes place in a culturally rich environment, providing immersive learning in Ayurvedic principles, including the use of herbs, dietary practices, and yoga.">
+<meta name="description" content="Gain clinical experience at this Ayurvedic Internship Retreat in Ubud, Bali, designed for Ayurvedic Health Counselor and Practitioner students. This experience offers hands-on training with a focus on one-on-one client consultations and Ayurvedic assessment methods. The program, led by an experienced Ayurvedic doctor, includes in-depth exploration of diagnostic techniques, client encounter experiences, and practical clinical skills. The retreat takes place in a culturally rich environment, providing immersive learning in Ayurvedic principles, including the use of herbs, dietary practices, and yoga.">
 <meta name="keywords" content="Ayurvedic Internship, Ubud, Bali, hands-on Ayurvedic training, client consultations, Ayurvedic diagnostic techniques, holistic health education">
 
 
@@ -22,7 +22,7 @@
 
 <!-- Social media sharing META Tags -->
 <meta property="og:title" content="">
-<meta property="og:description" content="Gail clinical experience at this Ayurvedic Internship Retreat in Ubud, Bali, designed for Ayurvedic Health Counselor and Practitioner students. This experience offers hands-on training with a focus on one-on-one client consultations and Ayurvedic assessment methods. The program, led by an experienced Ayurvedic doctor, includes in-depth exploration of diagnostic techniques, client encounter experiences, and practical clinical skills. The retreat takes place in a culturally rich environment, providing immersive learning in Ayurvedic principles, including the use of herbs, dietary practices, and yoga."> 
+<meta property="og:description" content="Gain clinical experience at this Ayurvedic Internship Retreat in Ubud, Bali, designed for Ayurvedic Health Counselor and Practitioner students. This experience offers hands-on training with a focus on one-on-one client consultations and Ayurvedic assessment methods. The program, led by an experienced Ayurvedic doctor, includes in-depth exploration of diagnostic techniques, client encounter experiences, and practical clinical skills. The retreat takes place in a culturally rich environment, providing immersive learning in Ayurvedic principles, including the use of herbs, dietary practices, and yoga."> 
 <meta property="og:image" content="/images/ayurvedic-internship-1.jpg">
 <meta property="og:url" content="http://localhost:4000/">
 
@@ -134,7 +134,7 @@
           <p>The program provides a dynamic and immersive experience, with a strong focus on client-to-client interaction, a key aspect of Ayurvedic practice. It delves into the complexities of Ayurveda, featuring comprehensive discussions about clients' conditions and effective treatment follow-up strategies. Participants will engage in hands-on activities, applying various diagnostic techniques to enhance their skills and deepen their comprehension of tailored patient care.</p><p>An essential element of the program is the systematic exploration and expansion of knowledge in Ayurvedic principles. Participants will acquire in-depth insights into system-wise examinations, reinforcing their foundational understanding of Ayurvedic practices.</p><p>The program also takes a holistic approach, providing extensive knowledge on the use of herbs to balance Doshas and Agni, crucial in the treatment correction process. Sessions on Dinacharya and Yoga are thoughtfully integrated, emphasizing therapeutic and rejuvenative practices and</p>
       </div>
       <div class="md:pl-5p">
-          <p>equipping participants with practical tools for overall health. To enrich the learning experience further, the program includes guest lectures from renowned experts in panchakarma, offering valuable perspectives on advanced Ayurvedic therapies. Additionally, a structured agenda includes comprehensive coverage of Ayurvedic cooking, delving into dietary principles, Pathy apathya, and Virudhaahara.</p><p>Enhancing the immersive nature of the program, participants will also visit botanical and herbal gardens. These field trips provide direct interaction with a variety of herbs and facilitate organoleptic examinations, extending the educational experience beyond theoretical learning.</p><p>Designed for aspiring Ayurvedic Health Counselors and Ayurvedic Practitioners, this preceptorship combines theoretical knowledge with practical experiences, equipping participants with the skills and understanding needed to excel as Ayurvedic healthcare practitioners.</p>
+          <p>equipping participants with practical tools for overall health. To enrich the learning experience further, the program includes guest lectures from renowned experts in panchakarma, offering valuable perspectives on advanced Ayurvedic therapies. Additionally, a structured agenda includes comprehensive coverage of Ayurvedic cooking, delving into dietary principles, Pathy apathya, and Virudhaahara.</p><p>Enhancing the immersive nature of the program, participants will also visit botanical and herbal gardens. These field trips provide direct interaction with a variety of herbs and facilitate organoleptic examinations, extending the educational experience beyond theoretical learning.</p><p>Designed for aspiring Ayurvedic Health Counselors and Ayurvedic Practitioners, this internship combines theoretical knowledge with practical experiences, equipping participants with the skills and understanding needed to excel as Ayurvedic healthcare practitioners.</p>
       </div>
 </section>
 
@@ -388,11 +388,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5PMXNHH7K"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-F5PMXNHH7K');
+    gtag('config', 'G-F5PMXNHH7K');
 </script>
 
 <!-- JS -->
@@ -415,9 +415,17 @@
         document.getElementById('cookieConsentBanner').style.display = 'none';
     }
 
-    // Event listeners for the buttons
+    // Event listeners for the Accept and Decline buttons
     document.getElementById('acceptCookies').addEventListener('click', acceptCookies);
     document.getElementById('declineCookies').addEventListener('click', declineCookies);
+
+    // Function to close the cookie banner (added for the 'X' button)
+    function closeCookieBanner() {
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+    }
+
+    // Event listener for the 'X' button
+    document.getElementById('close-cookie-banner').addEventListener('click', closeCookieBanner);
 
     // Function to load Google Analytics Script
     function loadGAScript() {
