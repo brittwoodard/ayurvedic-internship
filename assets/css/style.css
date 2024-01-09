@@ -764,9 +764,6 @@ input::placeholder, textarea::placeholder {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
-.w-\[40\%\] {
-  width: 40%;
-}
 .w-auto {
   width: auto;
 }
