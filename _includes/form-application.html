@@ -1,0 +1,56 @@
+<form name="apply" method="post" data-netlify="true" action="/contact-thank-you.html#contact" onSubmit="submit">
+    <p>Personal Information</p>
+    <!-- Name -->
+    <div class="grid sm:grid-cols-2 gap-8 mb-4">
+        <!-- First Name -->
+        <div>
+            <input type="text" id="first-name" name="first-name">
+            <label for="first-name" class="form-text">First Name</label>
+        </div>
+
+        <!-- Last Name -->
+        <div>
+            <input type="text" id="last-name" name="last-name">
+            <label for="last-name" class="form-text">Last Name</label>
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-4">
+        <input type="email" id="email" name="email">
+        <label for="email" class="form-text">Email</label>
+    </div>
+
+    <p>Educational Background</p>
+
+    <!-- Current Student -->
+    <fieldset class="mb-4">
+        <legend class="mb-4">Are you currently enrolled in an Ayurvedic program?</legend>
+        <div class="mb-2">
+            <input type="radio" id="budget-1" name="student" value="yes">
+            <label for="student-1">Yes</label>
+        </div>
+        <div class="mb-2">
+            <input type="radio" id="student-2" name="student" value="no">
+            <label for="student-2">No</label>
+        </div>
+        <div class="mb-2">
+            <input type="radio" id="student-3" name="student" value="graduate">
+            <label for="student-3">Graduate</label>
+        </div>
+    </fieldset>
+
+    <!-- Institute -->
+    <div class="mb-4">
+        <input type="text" id="institute" name="institute">
+        <label for="institute" class="form-text">If yes, please specify the institution:</label>
+    </div>
+
+    <div>
+        <textarea id="message" name="message" rows="4" placeholder=" Message" class="border border-medium"></textarea>
+    </div>
+
+    <div class="flex justify-end">
+        <button type="submit" class="button-dark mt-4 mb-12 sm:mb-0 text-medium">Send</button>
+    </div>
+</form>

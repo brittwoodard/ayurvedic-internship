@@ -30,37 +30,7 @@ cta:
 <!-- Contact Form -->
 <section class="p-10p">
     <h2 class="uppercase text-medium mb-4 tracking-wider">Contact</h2>
-    <form
-        name="contact" 
-        method="post" 
-        data-netlify="true" 
-        action="/contact-thank-you.html#contact" 
-        onSubmit="submit">
-        <div class="grid sm:grid-cols-2 gap-8 mb-4">
-            <div>
-                <input type="text" id="first-name" name="first-name">
-                <label for="first-name" class="form-text">First Name</label>
-            </div>
-    
-            <div>
-                <input type="text" id="last-name" name="last-name">
-                <label for="last-name" class="form-text">Last Name</label>
-            </div>
-        </div>
-    
-        <div class="mb-4">
-            <input type="email" id="email" name="email">
-            <label for="email" class="form-text">Email</label>
-        </div>
-    
-        <div>
-            <textarea id="message" name="message" rows="4" placeholder=" Message" class="border border-medium"></textarea>
-        </div>
-    
-        <div class="flex justify-end">
-            <button type="submit" class="button-dark mt-4 mb-12 sm:mb-0 text-medium">Send</button>
-        </div>
-    </form>
+    {% include form-contact.html %}
 </section>
 
 <!-- CTA -->
