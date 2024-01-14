@@ -740,6 +740,12 @@ input::placeholder, textarea::placeholder {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
 .block {
   display: block;
 }
@@ -915,7 +921,6 @@ input::placeholder, textarea::placeholder {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-
 @media (min-width: 640px) {
   .sm\:mb-0 {
     margin-bottom: 0px;
@@ -924,7 +929,6 @@ input::placeholder, textarea::placeholder {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 
 @media (min-width: 768px) {
   .md\:order-none {
@@ -972,7 +976,6 @@ input::placeholder, textarea::placeholder {
     text-align: right;
   }
 }
-
 
 @media (min-width: 1024px) {
   .lg\:text-light {
