@@ -55,37 +55,37 @@
 
     <section class="p-10p">
     <h1 class="uppercase text-medium mb-4 tracking-wider">Application for Ayurvedic Internship Retreat</h1>
-    <form name="apply" method="post" data-netlify="true" action="/contact-thank-you.html#contact" onSubmit="submit">
-    <p>Personal Information</p>
+    <form name="apply" method="post" data-netlify="true" action="/contact-thank-you.html#contact" onSubmit="submit" class="form-text">
+    <p><em>Personal Information</em></p>
     <!-- Name -->
     <div class="grid sm:grid-cols-2 gap-8 mb-4">
         <!-- First Name -->
         <div>
             <input type="text" id="first-name" name="first-name">
-            <label for="first-name" class="form-text">First Name</label>
+            <label for="first-name">First Name</label>
         </div>
 
         <!-- Last Name -->
         <div>
             <input type="text" id="last-name" name="last-name">
-            <label for="last-name" class="form-text">Last Name</label>
+            <label for="last-name">Last Name</label>
         </div>
     </div>
 
     <!-- Email -->
     <div class="mb-4">
         <input type="email" id="email" name="email">
-        <label for="email" class="form-text">Email</label>
+        <label for="email">Email</label>
     </div>
 
-    <p>Educational Background</p>
+    <p class="mt-8"><em>Educational Background</em></p>
 
     <!-- Current Student -->
     <fieldset class="mb-4">
         <legend class="mb-4">Are you currently enrolled in an Ayurvedic program?</legend>
         <div class="mb-2">
-            <input type="radio" id="budget-1" name="student" value="yes">
             <label for="student-1">Yes</label>
+            <input type="radio" id="student-1" name="student" value="yes">
         </div>
         <div class="mb-2">
             <input type="radio" id="student-2" name="student" value="no">
@@ -100,15 +100,51 @@
     <!-- Institute -->
     <div class="mb-4">
         <input type="text" id="institute" name="institute">
-        <label for="institute" class="form-text">If yes, please specify the institution:</label>
+        <label for="institute">If yes, please specify the institution</label>
     </div>
 
+    <!-- Program -->
+    <div class="mb-4">
+        <input type="text" id="program" name="program">
+        <label for="program">
+            Specify the program you are enrolled in or have graduated from (e.g., Ayurvedic Health Counselor, Ayurvedic
+            Practitioner, etc.)</label>
+    </div>
+
+    <p>Additional Information</p>
+
+    <!-- Goals -->
+    <div class="mb-4">
+        <textarea id="goals" name="goals" rows="4"
+            placeholder=" Please briefly describe your interest in Ayurveda and your goals for this internship"
+            class="border border-medium"></textarea>
+    </div>
+
+    <!-- Previous Experience -->
     <div>
-        <textarea id="message" name="message" rows="4" placeholder=" Message" class="border border-medium"></textarea>
+        <textarea id="experience" name="experience" rows="4"
+            placeholder=" Do you have any previous experience in Ayurvedic practices or related fields? (If yes, please describe)"
+            class="border border-medium"></textarea>
     </div>
 
+    <p class="mt-8">Tuition Details</p>
+
+    <!-- Payment Options -->
+    <fieldset class="mb-4">
+        <legend class="mb-4">Which payment option are you interested in?</legend>
+        <div class="mb-2">
+            <input type="radio" id="tuition-1" name="tuition" value="yes">
+            <label for="tuition-1">Pay In Full: $2,000 USD (save $510)</label>
+        </div>
+        <div class="mb-2">
+            <input type="radio" id="tuition-2" name="tuition" value="no">
+            <label for="tuition-2">3 Month Payment Plan: $500 deposit + $670 x 3 months</label>
+        </div>
+    </fieldset>
+
+    <!-- Submit -->
     <div class="flex justify-end">
-        <button type="submit" class="button-dark mt-4 mb-12 sm:mb-0 text-medium">Send</button>
+        <button type="submit" class="button-dark mt-4 mb-12 sm:mb-0 text-medium">Submit</button>
     </div>
 </form>
 </section>
