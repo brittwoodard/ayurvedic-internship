@@ -24,7 +24,7 @@
 <meta property="og:title" content="">
 <meta property="og:description" content=""> 
 <meta property="og:image" content="">
-<meta property="og:url" content="http://localhost:4000/apply.html">
+<meta property="og:url" content="http://localhost:4000/apply-thank-you.html">
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
@@ -53,106 +53,20 @@
 
 <body>
 
-    <section class="p-10p">
-    <h1 class="uppercase text-medium mb-4 tracking-wider">Application for Ayurvedic Internship Retreat</h1>
-    <form name="apply" method="post" data-netlify="true" action="/apply-thank-you.html" onSubmit="submit"
-    class="form-text">
+    <section class="p-10p text-medium">
+    <h1 class="uppercase mb-4 tracking-wider">Application for Ayurvedic Internship Retreat</h1>
     <div>
-        <p><em>Personal Information</em></p>
-        <!-- Name -->
-        <div class="grid sm:grid-cols-2 gap-8 mb-4">
-            <!-- First Name -->
-            <div>
-                <input type="text" id="first-name" name="first-name">
-                <label for="first-name">First Name</label>
-            </div>
-
-            <!-- Last Name -->
-            <div>
-                <input type="text" id="last-name" name="last-name">
-                <label for="last-name">Last Name</label>
-            </div>
-        </div>
-
-        <!-- Email -->
-        <div class="mb-4">
-            <input type="email" id="email" name="email">
-            <label for="email">Email</label>
-        </div>
+        <h2>Thank you for submitting your application for the Ayurvedic Internship Program.</h2>
+        <p>Here's what to expect next:</p>
+        <ul>
+            <li><strong>Review Process</strong>: Your application will be reviewed by our Preceptor to determine eligibility for the program. This process should take approximately 7 business days.</li>
+            <li><strong>Contract & Reservation</strong>: Upon approval, a contract will be sent to your provided email address, along with our bank details for the money transfer.</li>
+            <li><strong>Securing Your Spot</strong>: To reserve your place in the internship, please complete the contract and make a $500 USD non-refundable, non-transferable deposit.</li>
+            <li><strong>Minimum Participation</strong>: A minimum of 5 interns is required for the retreat to proceed. Prompt reservation is essential.</li>
+            <li><strong>Payment Plan Deadline</strong>: For those interested in the 3-month payment plan, the $500 deposit must be completed by February 1, 2024.</li>
+        </ul>
+        <p>We're excited about your interest in our program and look forward to potentially working with you!</p>
     </div>
-
-    <div>
-        <p class="mt-8"><em>Educational Background</em></p>
-
-        <!-- Current Student -->
-        <legend class="mb-4">Are you currently enrolled in an Ayurvedic program?</legend>
-        <div class="mb-2 flex items-center">
-            <label for="status-1">Yes</label>
-            <input type="radio" id="status-1" name="status" value="yes" class="w-auto ml-4">
-        </div>
-        <div class="mb-2 flex items-center">
-            <label for="status-2">No</label>
-            <input type="radio" id="status-2" name="status" value="no" class="w-auto ml-4">
-        </div>
-        <div class="mb-2 flex items-center">
-            <label for="status-3">Graduate</label>
-            <input type="radio" id="status-3" name="status" value="graduate" class="w-auto ml-4">
-        </div>
-
-        <!-- Institute -->
-        <div class="mb-4">
-            <input type="text" id="institute" name="institute">
-            <label for="institute">If yes, please specify the institution</label>
-        </div>
-
-        <!-- Program -->
-        <div class="mb-4">
-            <input type="text" id="program" name="program">
-            <label for="program">
-                Specify the program you are enrolled in or have graduated from (e.g., Ayurvedic Health Counselor,
-                Ayurvedic
-                Practitioner, etc.)</label>
-        </div>
-    </div>
-
-    <div class="mt-12">
-        <p><em>Additional Information</em></p>
-
-        <!-- Goals -->
-        <div class="mb-4">
-            <textarea id="goals" name="goals" rows="4"
-                placeholder=" Please briefly describe your interest in Ayurveda and your goals for this internship"
-                class="border border-medium"></textarea>
-        </div>
-
-        <!-- Previous Experience -->
-        <div>
-            <textarea id="experience" name="experience" rows="4"
-                placeholder=" Do you have any previous experience in Ayurvedic practices or related fields? (If yes, please describe)"
-                class="border border-medium"></textarea>
-        </div>
-    </div>
-    <div class="mt-12">
-        <p><em>Tuition Details</em></p>
-
-        <!-- Payment Options -->
-        <legend class="mb-4">Which payment option are you interested in?</legend>
-        <div class="flex items-center mb-2">
-            <label for="tuition-1">Pay In Full: $2,000 USD (save $510)</label>
-            <input type="radio" id="tuition-1" name="tuition" value="yes" class="w-auto ml-4">
-        </div>
-        <div class="flex items-center mb-2">
-            <label for="tuition-2">3 Month Payment Plan: $500 deposit + $670 x 3
-                months</label>
-            <input type="radio" id="tuition-2" name="tuition" value="no" class="w-auto ml-4">
-        </div>
-
-
-        <!-- Submit -->
-        <div class="flex justify-end">
-            <button type="submit" class="button-dark mt-4 mb-12 sm:mb-0 text-medium">Submit</button>
-        </div>
-</form>
 </section>
 
     <footer class="px-5p py-8 bg-dark-style text-center">
