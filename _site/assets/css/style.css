@@ -782,6 +782,9 @@ input::placeholder, textarea::placeholder {
 .flex-col {
   flex-direction: column;
 }
+.items-center {
+  align-items: center;
+}
 .justify-end {
   justify-content: flex-end;
 }

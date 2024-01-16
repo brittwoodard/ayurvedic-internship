@@ -24,7 +24,7 @@
 <meta property="og:title" content="">
 <meta property="og:description" content=""> 
 <meta property="og:image" content="">
-<meta property="og:url" content="http://localhost:4000/application.html">
+<meta property="og:url" content="http://localhost:4000/apply.html">
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
@@ -55,97 +55,103 @@
 
     <section class="p-10p">
     <h1 class="uppercase text-medium mb-4 tracking-wider">Application for Ayurvedic Internship Retreat</h1>
-    <form name="apply" method="post" data-netlify="true" action="/contact-thank-you.html#contact" onSubmit="submit" class="form-text">
-    <p><em>Personal Information</em></p>
-    <!-- Name -->
-    <div class="grid sm:grid-cols-2 gap-8 mb-4">
-        <!-- First Name -->
-        <div>
-            <input type="text" id="first-name" name="first-name">
-            <label for="first-name">First Name</label>
-        </div>
-
-        <!-- Last Name -->
-        <div>
-            <input type="text" id="last-name" name="last-name">
-            <label for="last-name">Last Name</label>
-        </div>
-    </div>
-
-    <!-- Email -->
-    <div class="mb-4">
-        <input type="email" id="email" name="email">
-        <label for="email">Email</label>
-    </div>
-
-    <p class="mt-8"><em>Educational Background</em></p>
-
-    <!-- Current Student -->
-    <fieldset class="mb-4">
-        <legend class="mb-4">Are you currently enrolled in an Ayurvedic program?</legend>
-        <div class="mb-2">
-            <label for="student-1">Yes</label>
-            <input type="radio" id="student-1" name="student" value="yes">
-        </div>
-        <div class="mb-2">
-            <input type="radio" id="student-2" name="student" value="no">
-            <label for="student-2">No</label>
-        </div>
-        <div class="mb-2">
-            <input type="radio" id="student-3" name="student" value="graduate">
-            <label for="student-3">Graduate</label>
-        </div>
-    </fieldset>
-
-    <!-- Institute -->
-    <div class="mb-4">
-        <input type="text" id="institute" name="institute">
-        <label for="institute">If yes, please specify the institution</label>
-    </div>
-
-    <!-- Program -->
-    <div class="mb-4">
-        <input type="text" id="program" name="program">
-        <label for="program">
-            Specify the program you are enrolled in or have graduated from (e.g., Ayurvedic Health Counselor, Ayurvedic
-            Practitioner, etc.)</label>
-    </div>
-
-    <p>Additional Information</p>
-
-    <!-- Goals -->
-    <div class="mb-4">
-        <textarea id="goals" name="goals" rows="4"
-            placeholder=" Please briefly describe your interest in Ayurveda and your goals for this internship"
-            class="border border-medium"></textarea>
-    </div>
-
-    <!-- Previous Experience -->
+    <form name="apply" method="post" data-netlify="true" action="/contact-thank-you.html#contact" onSubmit="submit"
+    class="form-text">
     <div>
-        <textarea id="experience" name="experience" rows="4"
-            placeholder=" Do you have any previous experience in Ayurvedic practices or related fields? (If yes, please describe)"
-            class="border border-medium"></textarea>
+        <p><em>Personal Information</em></p>
+        <!-- Name -->
+        <div class="grid sm:grid-cols-2 gap-8 mb-4">
+            <!-- First Name -->
+            <div>
+                <input type="text" id="first-name" name="first-name">
+                <label for="first-name">First Name</label>
+            </div>
+
+            <!-- Last Name -->
+            <div>
+                <input type="text" id="last-name" name="last-name">
+                <label for="last-name">Last Name</label>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+            <input type="email" id="email" name="email">
+            <label for="email">Email</label>
+        </div>
     </div>
 
-    <p class="mt-8">Tuition Details</p>
+    <div>
+        <p class="mt-8"><em>Educational Background</em></p>
 
-    <!-- Payment Options -->
-    <fieldset class="mb-4">
+        <!-- Current Student -->
+        <legend class="mb-4">Are you currently enrolled in an Ayurvedic program?</legend>
+        <div class="mb-2 flex items-center">
+            <label for="status-1">Yes</label>
+            <input type="radio" id="status-1" name="status" value="yes" class="w-auto ml-4">
+        </div>
+        <div class="mb-2 flex items-center">
+            <label for="status-2">No</label>
+            <input type="radio" id="status-2" name="status" value="no" class="w-auto ml-4">
+        </div>
+        <div class="mb-2 flex items-center">
+            <label for="status-3">Graduate</label>
+            <input type="radio" id="status-3" name="status" value="graduate" class="w-auto ml-4">
+        </div>
+
+        <!-- Institute -->
+        <div class="mb-4">
+            <input type="text" id="institute" name="institute">
+            <label for="institute">If yes, please specify the institution</label>
+        </div>
+
+        <!-- Program -->
+        <div class="mb-4">
+            <input type="text" id="program" name="program">
+            <label for="program">
+                Specify the program you are enrolled in or have graduated from (e.g., Ayurvedic Health Counselor,
+                Ayurvedic
+                Practitioner, etc.)</label>
+        </div>
+    </div>
+
+    <div class="mt-12">
+        <p><em>Additional Information</em></p>
+
+        <!-- Goals -->
+        <div class="mb-4">
+            <textarea id="goals" name="goals" rows="4"
+                placeholder=" Please briefly describe your interest in Ayurveda and your goals for this internship"
+                class="border border-medium"></textarea>
+        </div>
+
+        <!-- Previous Experience -->
+        <div>
+            <textarea id="experience" name="experience" rows="4"
+                placeholder=" Do you have any previous experience in Ayurvedic practices or related fields? (If yes, please describe)"
+                class="border border-medium"></textarea>
+        </div>
+    </div>
+    <div class="mt-12">
+        <p><em>Tuition Details</em></p>
+
+        <!-- Payment Options -->
         <legend class="mb-4">Which payment option are you interested in?</legend>
-        <div class="mb-2">
-            <input type="radio" id="tuition-1" name="tuition" value="yes">
+        <div class="flex items-center mb-2">
             <label for="tuition-1">Pay In Full: $2,000 USD (save $510)</label>
+            <input type="radio" id="tuition-1" name="tuition" value="yes" class="w-auto ml-4">
         </div>
-        <div class="mb-2">
-            <input type="radio" id="tuition-2" name="tuition" value="no">
-            <label for="tuition-2">3 Month Payment Plan: $500 deposit + $670 x 3 months</label>
+        <div class="flex items-center mb-2">
+            <label for="tuition-2">3 Month Payment Plan: $500 deposit + $670 x 3
+                months</label>
+            <input type="radio" id="tuition-2" name="tuition" value="no" class="w-auto ml-4">
         </div>
-    </fieldset>
 
-    <!-- Submit -->
-    <div class="flex justify-end">
-        <button type="submit" class="button-dark mt-4 mb-12 sm:mb-0 text-medium">Submit</button>
-    </div>
+
+        <!-- Submit -->
+        <div class="flex justify-end">
+            <button type="submit" class="button-dark mt-4 mb-12 sm:mb-0 text-medium">Submit</button>
+        </div>
 </form>
 </section>
 
