@@ -87,7 +87,7 @@
   }
 
   /* Mobile Menu */
-  .mobile-button {
+  .mobile-button, .mobile-button-dark {
     position: fixed;
     top: 3.2vh;
     right: 2vh;
@@ -95,18 +95,31 @@
     padding: 0.5rem;
   }
 
-  .mobile-button span {
+  .mobile-button span, .mobile-button-dark span {
     width: 2rem;
-    border: 0.5px solid var(--light);
-    background-color: var(--light);
     display: block;
     border-radius: 22px;
     transition: 2s;
   }
 
+  .mobile-button span {
+    border: 0.5px solid var(--light);
+    background-color: var(--light);
+  }
+
+  .mobile-button-dark span {
+    border: 0.5px solid var(--medium);
+    background-color: var(--medium);
+  }
+
   .mobile-button.active span {
     border-color: var(--light);
     background-color: var(--light);
+  }
+
+  .mobile-button-dark.active span {
+    border-color: var(--medium);
+    background-color: var(--medium);
   }
 
   .mobile-top,
@@ -122,20 +135,20 @@
     bottom: -02px;
   }
 
-  .mobile-button.active .mobile-top {
+  .mobile-button.active .mobile-top, .mobile-button-dark.active .mobile-top {
     border-color: var(--medium);
     position: absolute;
     top: 8px;
     transform: rotateZ(45deg);
   }
 
-  .mobile-button.active .mobile-middle {
+  .mobile-button.active .mobile-middle, .mobile-button-dark.active .mobile-middle {
     /*   transform: rotateZ(270deg); */
     border-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .mobile-button.active .mobile-bottom {
+  .mobile-button.active .mobile-bottom, .mobile-button-dark.active .mobile-bottom {
     border-color: var(--medium);
     position: absolute;
     bottom: 8px;
