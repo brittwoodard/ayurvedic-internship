@@ -46,9 +46,6 @@
 <!-- Tailwind Stylesheet -->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-<!-- Alpine JS -->
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
 </head>
 
 <body>
@@ -56,16 +53,17 @@
     <!-- Hero Banner -->
 <section class="bg-image-style text-light hero-banner p-5p"
     style="background-image: url('images/ayurvedic-internship-11.jpg');">
-    <nav class="absolute top-0 right-0">
-        <a class="text-dark lg:text-light hamburger-button">Menu</a>
-    </nav>
-    <div class="mobile-menu">
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/apply.html">Apply</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
+    <div class="mobile-button">
+        <span class="mobile-top"></span>
+        <span class="mobile-middle"></span>
+        <span class="mobile-bottom"></span>
     </div>
+
+    <nav class="mobile-menu">
+        <a href="/index.html">Home</a>
+        <a href="/apply.html">Apply</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
     <div>
         <h1 class="text-serif-lg">Ayurvedic Internship Retreat in Ubud, Bali</h1>
         <h2 class="subtitle">Hands-On Training for Ayurvedic Health Counselor and Practitioner Students</h2>
@@ -450,6 +448,17 @@
 
     <!-- Popup -->
     <script async data-uid="1fec54076b" src="https://embodied-creative.ck.page/1fec54076b/index.js"></script>
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS -->
+    <script src="/main.js"></script>
 
 </body>
 
