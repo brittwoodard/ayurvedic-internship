@@ -519,6 +519,7 @@ input::placeholder, textarea::placeholder {
     right: 2vh;
     z-index: 9;
     padding: 0.5rem;
+    cursor: pointer;
   }
 .mobile-button span, .mobile-button-dark span {
     width: 2rem;
@@ -607,6 +608,7 @@ input::placeholder, textarea::placeholder {
   }
 .mobile-menu a:hover {
     color: var(--dark);
+    transition: 1s;
   }
 /* Typography Classes */
 .subtitle {
@@ -1014,7 +1016,6 @@ input::placeholder, textarea::placeholder {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-
 @media (min-width: 640px) {
   .sm\:mb-0 {
     margin-bottom: 0px;
@@ -1023,7 +1024,6 @@ input::placeholder, textarea::placeholder {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 
 @media (min-width: 768px) {
   .md\:order-none {
