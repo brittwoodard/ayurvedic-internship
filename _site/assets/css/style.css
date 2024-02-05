@@ -801,6 +801,12 @@ input::placeholder, textarea::placeholder {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .float-right {
   float: right;
 }
@@ -841,6 +847,15 @@ input::placeholder, textarea::placeholder {
 .mt-8 {
   margin-top: 2rem;
 }
+.ml-10p {
+  margin-left: 10%;
+}
+.ml-20p {
+  margin-left: 20%;
+}
+.mb-20p {
+  margin-bottom: 20%;
+}
 .block {
   display: block;
 }
@@ -877,6 +892,9 @@ input::placeholder, textarea::placeholder {
 .min-h-\[85vh\] {
   min-height: 85vh;
 }
+.min-h-\[83vh\] {
+  min-height: 83vh;
+}
 .w-auto {
   width: auto;
 }
@@ -897,6 +915,9 @@ input::placeholder, textarea::placeholder {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -943,6 +964,18 @@ input::placeholder, textarea::placeholder {
 .bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(241 233 226 / var(--tw-bg-opacity));
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
+}
+.bg-center {
+  background-position: center;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 .p-10p {
   padding: 10%;
@@ -1085,6 +1118,9 @@ input::placeholder, textarea::placeholder {
   }
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
   .md\:gap-16 {
     gap: 4rem;
