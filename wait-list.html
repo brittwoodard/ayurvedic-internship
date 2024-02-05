@@ -27,21 +27,14 @@ cta:
     </nav>
 </header>
 
-<!-- Teacher Bio -->
-<section class="grid md:grid-cols-2 gap-8">
-    <div class="bg-dark-style p-10p">
-        <h1 class="text-serif-lg">{{page.teacher.heading}}</h1>
-        <span class="uppercase mb-2 inline-block">{{page.teacher.subheading}}</span>
-        <p>{{page.teacher.description_html}}</p>
+<!-- Waitlist -->
+<section class="pt-5p pb-10p px-10p flex min-h-[85vh]">
+    <div class="flex-grow text-medium" style="flex-basis: 75%;">
+        <h2 class="text-serif-md text-medium mb-4 tracking-wider">Join the waitlist</h2>
+        <p>Ready to deepen your Ayurvedic practice? Sign up for our waitlist today and be among the first to discover our upcoming Ayurvedic Internship dates. Enjoy an exclusive early bird discount and stay ahead of the game.</p><p>Plus, get immediate notification when we start accepting applications and open enrollment for our next session. Don't miss out on this opportunity to enhance your knowledge and skills in the heart of Bali.</p>
+        {% include form-waitlist.html %}
     </div>
-    <div class="bg-image-style min-h-[90vh]" style="background-image: url('{{page.teacher.featured_image}}');"></div>
+    <div class="flex-none pl-10p" style="flex-basis: 25%;">
+        <img src="/images/ayurvedic-internship-3.png" class="float-right">
+    </div>
 </section>
-
-<!-- Contact Form -->
-<section class="p-10p">
-    <h2 class="uppercase text-medium mb-4 tracking-wider">Contact</h2>
-    {% include form-contact.html %}
-</section>
-
-<!-- CTA -->
-{% include cta.html %}

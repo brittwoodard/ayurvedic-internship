@@ -798,6 +798,12 @@ input::placeholder, textarea::placeholder {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+.float-right {
+  float: right;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -853,6 +859,9 @@ input::placeholder, textarea::placeholder {
 .h-16 {
   height: 4rem;
 }
+.h-\[28vh\] {
+  height: 28vh;
+}
 .min-h-\[20vh\] {
   min-height: 20vh;
 }
@@ -862,14 +871,32 @@ input::placeholder, textarea::placeholder {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+.min-h-\[85vh\] {
+  min-height: 85vh;
+}
 .w-auto {
   width: auto;
 }
 .w-full {
   width: 100%;
 }
+.flex-none {
+  flex: none;
+}
+.flex-grow {
+  flex-grow: 1;
+}
 .cursor-pointer {
   cursor: pointer;
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -948,6 +975,15 @@ input::placeholder, textarea::placeholder {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.pl-10p {
+  padding-left: 10%;
+}
+.pb-10p {
+  padding-bottom: 10%;
+}
+.pt-5p {
+  padding-top: 5%;
 }
 .text-left {
   text-align: left;

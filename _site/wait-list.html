@@ -24,7 +24,7 @@
 <meta property="og:title" content="">
 <meta property="og:description" content=""> 
 <meta property="og:image" content="">
-<meta property="og:url" content="http://localhost:4000/contact-thank-you.html">
+<meta property="og:url" content="http://localhost:4000/wait-list.html">
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
@@ -65,34 +65,36 @@
     </nav>
 </header>
 
-<!-- Teacher Bio -->
-<section class="grid md:grid-cols-2 gap-8">
-    <div class="bg-dark-style p-10p">
-        <h1 class="text-serif-lg">Dr. Resmi V. Rajagopal</h1>
-        <span class="uppercase mb-2 inline-block">BAMS, MS (Ayurveda Gynec) PGDYN</span>
-        <p>Dr. Resmi V. Rajagopal is a dedicated Ayurveda Physician and founder of the versatile wellness app Ayurshe, and born and nurtured in the Ayurvedic-rich environment of Kerala, India. Her journey in Ayurvedic medicine commenced in 2007, marked by her graduation from Pankajakasthuri Ayurveda Medical College in Thiruvananthapuram, followed by a master’s degree from the prestigious ITRA Jamnagar. Her academic path was enhanced by additional training in yoga therapy, beauty care, and pulse diagnosis.</p><p>Throughout her career, Dr. Rajagopal has developed a keen expertise in patient care, diagnostic skills, and hands-on surgical experiences, infused with the practical wisdom and spiritual insights imparted by her GURUs. Her approach to health and wellness extends beyond traditional learning, embodying a holistic perspective.</p><p>Dr. Rajagopal's passion for education led her to the role of assistant professor at the SDM College of Ayurveda in Udupi, India, where she played a pivotal role in mentoring the next generation of Ayurveda students. This experience significantly enriched her skills in both theoretical and practical aspects of Ayurvedic medicine.</p>
-    </div>
-    <div class="bg-image-style min-h-[90vh]" style="background-image: url('/images/ayurvedic-internship-12.jpg');"></div>
-</section>
+<!-- Waitlist -->
+<section class="pt-5p pb-10p px-10p flex min-h-[85vh]">
+    <div class="flex-grow text-medium" style="flex-basis: 75%;">
+        <h2 class="text-serif-md text-medium mb-4 tracking-wider">Join the waitlist</h2>
+        <p>Ready to deepen your Ayurvedic practice? Sign up for our waitlist today and be among the first to discover our upcoming Ayurvedic Internship dates. Enjoy an exclusive early bird discount and stay ahead of the game.</p><p>Plus, get immediate notification when we start accepting applications and open enrollment for our next session. Don't miss out on this opportunity to enhance your knowledge and skills in the heart of Bali.</p>
+        <form name="contact" method="post" data-netlify="true" action="/contact-thank-you.html#contact" onSubmit="submit">
+    <div class="grid sm:grid-cols-2 gap-8 mb-4">
+        <div>
+            <input type="text" id="first-name" name="first-name">
+            <label for="first-name" class="form-text">First Name</label>
+        </div>
 
-<!-- Contact Form -->
-<section class="p-10p">
-    <h2 class="uppercase text-medium mb-4 tracking-wider" id="contact">Contact</h2>
-    <div>
-        <h3 class="text-serif-sm">Thank You</h3>
-        <p>Thank you for reaching out to us! Your message is important, and we're thrilled that you're interested in deepening your journey into the world of Ayurveda. We will review your inquiry and get back to you as soon as possible. Meanwhile, we invite you to explore our website for more insights into our immersive Ayurvedic internship experience in Ubud, Bali. We're looking forward to potentially being a part of your holistic learning journey.</p>
+        <div>
+            <input type="text" id="last-name" name="last-name">
+            <label for="last-name" class="form-text">Last Name</label>
+        </div>
     </div>
-</section>
 
-<!-- CTA -->
-<section class="grid md:grid-cols-4 gap-4 md:gap-16 bg-dark-style py-5p px-10p border-b border-light text-light">
-    <div class="col-span-3">
-        <h2 class="text-serif-md">Advance your career in Ayurvedic wellness</h2>
-        <p>Take a definitive step towards completing your Ayurvedic education and starting your journey as a professional. Join our waitlist today and be the first to secure your place in this life-changing Ayurvedic program.</p>
-        <a class="button md:hidden" href="">Join the waitlist</a>
+    <div class="mb-4">
+        <input type="email" id="email" name="email">
+        <label for="email" class="form-text">Email</label>
     </div>
-    <div class="hidden md:block text-right">
-        <a href="" class="button">Join the waitlist</a>
+
+    <div class="flex justify-end">
+        <button type="submit" class="button-dark mt-4 mb-12 sm:mb-0 text-medium uppercase">Join the waitlist</button>
+    </div>
+</form>
+    </div>
+    <div class="flex-none pl-10p" style="flex-basis: 25%;">
+        <img src="/images/ayurvedic-internship-3.png" class="float-right">
     </div>
 </section>
 
